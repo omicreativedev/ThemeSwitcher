@@ -8,3 +8,5 @@ This tool is helpful for making an og:image for your profile page you create. Th
 ```
 [Favicon Favicon Generator](https://favicon.io/)
 This tool will help you to make a favicon for your page. It may or may not show up (YMMV). A favicon is 32 (width) x 32 (height) and in ico format.
+[Meta URL Debugger](https://developers.facebook.com/tools/debug/)
+Use this tool to verify if your meta-tags on your page are as expected.
