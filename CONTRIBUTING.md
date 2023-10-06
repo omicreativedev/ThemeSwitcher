@@ -14,6 +14,7 @@
 * If your make an external JS file for just your page, put it in pages/js/<YOURGITHUBUSERNAME>/
 * If you have an image or js file that ANYONE can use, put it in pages/img/ or pages/js/ respectively.
 * If you have to make a change to another page or theme, please comment your change with your username and profile link
+* When you create a page, you must update pages_list.txt
   #### SOME PAGE IDEAS - MAKE PAGES NICE not EASY. Challenge yourself! Be creative!
     * Soundcloud Playlist
     * Spotify Pre-save
@@ -31,6 +32,7 @@
 * TEST ALL YOUR CODE LOCALLY and make SURE it is SAFE and that nothing breaks BEFORE requesting to merge.
 * WE ARE NOT converting to LESS or SCSS for the purpose of this being beginner friendly.
 * If you create a theme with a unique feature or animation, be sure it will work with all pages even if it's not used.
+* When you create a theme, you must update themes_list.txt
   #### SOME THEME IDEAS
     * A Halloween Theme
     * A Winter Theme with Snow
