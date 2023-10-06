@@ -15,12 +15,12 @@
 * If you have an image or js file that ANYONE can use, put it in pages/img/ or pages/js/ respectively.
 * If you have to make a change to another page or theme, please comment your change with your username and profile link
   #### SOME PAGE IDEAS - MAKE PAGES NICE not EASY. Challenge yourself! Be creative!
-  * Soundcloud Playlist
-  * Spotify Pre-save
-  * Link In Bio Page
-  * A Haiku
-  * A Pure CSS Graphic
-  * An AI Generated Meme
+    * Soundcloud Playlist
+    * Spotify Pre-save
+    * Link In Bio Page
+    * A Haiku
+    * A Pure CSS Graphic
+    * An AI Generated Meme
 ## PR 2 - Create A New Theme in Themes Folder
 * Start by copying an existing theme and renaming it to whatever you like (keep it PG rated!)
 * Edit the theme so that it is 100% unique.
@@ -32,10 +32,10 @@
 * WE ARE NOT converting to LESS or SCSS for the purpose of this being beginner friendly.
 * If you create a theme with a unique feature or animation, be sure it will work with all pages even if it's not used.
   #### SOME THEME IDEAS
-  * A Halloween Theme
-  * A Winter Theme with Snow
-  * A Hyperwave Theme
-  * A Minimalist Theme
+    * A Halloween Theme
+    * A Winter Theme with Snow
+    * A Hyperwave Theme
+    * A Minimalist Theme
 ## OTHER PR IDEAS
 * Fix an Issue
 * Edit CONTRIBUTING.md to be clearer and cooler!
