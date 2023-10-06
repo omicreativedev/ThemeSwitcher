@@ -1,6 +1,10 @@
+## Important Notes:
+* Fork the Repo. You can start making themes and pages without approval to get started.
+* If handling an Issue or Bug or Enhancement, PLEASE WAIT FOR APPROVAL to get started.
+* YES, you may PROPOSE YOUR IDEAS!
 ## PR 1 - Create A New Profile Page in Pages Folder
-* Copy the omicreativedev.html and rename it to <YOURGITHUBUSERNAME>.html
-* <YOURGITHUBUSERNAME>.html should be in the same folder as omicreativedev.html
+* Copy the omicreativedev.html and rename it to YOURGITHUBUSERNAME.html
+* YOURGITHUBUSERNAME.html should be in the same folder as omicreativedev.html
 * Edit the contents of <YOURGITHUBUSERNAME>.html and replace my information with yours.
 * Don't forget to update your profile picture!!!
 * Don't remove the javascript, the themeswitch drowpdown, or the link back to home!
@@ -10,8 +14,8 @@
 * Your profile page does NOT have to be your profile. You can do anything! But, it should have YOUR info, not mine.
 * YES, if you know how, you can add custom Javascript. It MUST be safe!
 * DO NOT ALTER any theme files in such a way that they break other pages (including index.)
-* If your page needs images, you can add them in pages/img/<YOURGITHUBUSERNAME>/
-* If your make an external JS file for just your page, put it in pages/js/<YOURGITHUBUSERNAME>/
+* If your page needs images, you can add them in pages/img/YOURGITHUBUSERNAME/
+* If your make an external JS file for just your page, put it in pages/js/YOURGITHUBUSERNAME/
 * If you have an image or js file that ANYONE can use, put it in pages/img/ or pages/js/ respectively.
 * If you have to make a change to another page or theme, please comment your change with your username and profile link
 * When you create a page, you must update pages_list.txt
@@ -46,7 +50,11 @@
 * Rewrite the Home Page (index.html) to explain everything better
 * Improve any standardization
 * Create TEMPLATES for themes or pages and include instructions as comments
-  ## Note About Contributors.md
+## WHAT NOT TO DO
+* Do not forget to keep your branch updated and resolve any problems before making a pull request.
+* Do not stray too far from the path! I don't have the capacity to deal with a lot of branch conflicts. Please stay within the the scope of creating pages and themes. Themes should work on all pages. Nothing should break. Everything should be in neat folders where it belongs so nothing becomes too messy.
+* Do not spam. This includes making PRs for small typos, fixing white space, etc. [Here are some examples of bad practices](https://twitter.com/shitoberfest). If it is a small change, just bring it up in a discussion or raise an issue.
+## Note About Contributors.md
   You should update this file when you make any request to merge to ensure your information is in this file.
   Once your information is in this file and you've merged one PR, you don't need to add it again unless it gets deleted.
   Please be careful not to delete other contributors.
