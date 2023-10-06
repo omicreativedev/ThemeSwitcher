@@ -32,6 +32,7 @@ Although this project is intended to be beginner friendly, it should not be easy
 * ⭐ STAR this repository
 * 👽 [Follow me on Github](https://github.com/omicreativedev)
 * 🐤 [Follow me on ❌itter](https://twitter.com/omicreativedev)
+* 👾 [Friend me on DISCORD](https://discord.gg/DWFRBv3JEy)
 
 ## COPYLEFT
 This code / website is CC0 but the information on user created pages is personal and may be covered by additional rights such as namesake, tradedress, etc. As such, you are welcome to download this whole project but only the project is CC0, not the personal data on pages. Themes created are part of the opensource contributions but pages (such as the profiles in the /pages folder) must be WIPED of all personal identifying information and photographs which I don't have rights to grant. The LAYOUTS of those pages are opensource contributions and CC0. Anyone may adapt this project for their own repository to start a Hacktoberfest Repo of their own. If you choose to do this, make a PULL REQUEST and list your repository (based on this one) below:
