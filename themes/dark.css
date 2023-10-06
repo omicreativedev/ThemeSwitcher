@@ -64,6 +64,10 @@ background-position:0 50%
 color:#fff
 }
 
+.theme-switch {
+    display: inline; /* Use "inline-block" for more control over spacing */
+}
+
 .myButton {
 box-shadow:3px 4px 0 0 #4e6096;
 background:linear-gradient(to bottom,#ee7752 5%,#e73c7d 100%);

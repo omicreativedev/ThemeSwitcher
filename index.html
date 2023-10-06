@@ -1,0 +1,130 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My First Time Maintaining a Hacktoberfest Repo">
+    <meta property="og:title" content="My First Hacktoberfest Repo">
+    <meta property="og:description" content="My First Time Maintaining a Hacktoberfest Repo">
+    <meta property="og:image" content="themes/img/social.jpg"> <!-- Replace with the actual image path -->
+    <meta property="og:url" content="https://yourwebsite.com">
+    <link id="default-css" rel="stylesheet" type="text/css" href="layout.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="themes/light.css">
+    <title>My First Hacktoberfest Repo</title>
+</head>
+<body>
+ <div class="profile-content">  
+ <div class="page-main">
+
+    <main>
+        <h2>Welcome to my First Hacktoberfest Repo!</h2>
+        <p>I created this repository in an effort to learn how to maintain a public respo hands on. So I created this activity as a playground for new students, hacktoberfest first-timers, and experienced contributors that want to help us learn!</p>
+<h2>Contribution Objectives</h2>
+<p>Your contributions to this project should be significant and challenging "for you" which is very relative to your personal experience. You may be a great Java programmer and terrible at HTML. So I won't be discluding anyone that makes any impactful contribution. Please look at the Code of Conduct and Contribution documents on the repository for general rules and guidelines.</p>
+  
+           <h3>PR 1 - Create a Page</h3>
+
+<!-- Page Selection Dropdown -->
+<div class="page-selection">
+    <label for="page-select">Example Pages:</label>
+    <select id="page-select" onchange="changePage()">
+        <option value="">Select A Page</option>
+    </select>
+</div>
+
+<h3>PR 2 - Create a Theme</h3>
+
+<!-- Theme Switching Dropdown -->
+<div class="theme-switch">
+    <label for="theme-select">Example Themes:</label>
+    <select id="theme-select" onchange="changeTheme()">
+        <option value="">Default Theme</option>
+    </select>
+</div>
+
+
+
+         
+               <h3>PR 3 - Fix Issue</h3>
+               <h3>PR 4 - Create Enhancement</h3>
+    </main>
+    </div>
+
+
+  </div>  
+
+<script>
+    // Function to populate the page select dropdown
+    function populatePageDropdown() {
+        const pageSelect = document.getElementById("page-select");
+        fetch("pages_list.txt")
+            .then(response => response.text())
+            .then(data => {
+                const pageFiles = data.split("\n");
+                pageFiles.forEach(pageFileName => {
+                    const option = document.createElement("option");
+                    option.value = "pages/" + pageFileName;
+                    option.textContent = pageFileName;
+                    pageSelect.appendChild(option);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching page list:", error);
+            });
+    }
+
+    // Function to populate the theme select dropdown
+    function populateThemeDropdown() {
+        const themeSelect = document.getElementById("theme-select");
+        fetch("themes_list.txt")
+            .then(response => response.text())
+            .then(data => {
+                const themeFiles = data.split("\n");
+                themeFiles.forEach(themeFileName => {
+                    const option = document.createElement("option");
+                    option.value = "themes/" + themeFileName;
+                    option.textContent = themeFileName;
+                    themeSelect.appendChild(option);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching theme list:", error);
+            });
+    }
+
+    // Call the functions to populate the dropdowns
+    populatePageDropdown();
+    populateThemeDropdown();
+
+    // Function to handle page selection change
+    function changePage() {
+        const selectedValue = document.getElementById("page-select").value;
+        if (selectedValue !== "") {
+            // Redirect to the selected page
+            window.location.href = selectedValue;
+        }
+    }
+
+    // Function to handle theme selection change
+    function changeTheme() {
+        const selectedValue = document.getElementById("theme-select").value;
+        if (selectedValue !== "") {
+            // Change the theme by updating the stylesheet
+            document.getElementById("theme-style").href = selectedValue;
+        }
+    }
+
+    // Attach the changePage and changeTheme functions to the select elements' onchange events
+    document.getElementById("page-select").addEventListener("change", changePage);
+    document.getElementById("theme-select").addEventListener("change", changeTheme);
+</script>
+</body>
+</html>
+
