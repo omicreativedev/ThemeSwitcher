@@ -1,6 +1,6 @@
 # hacktoberfest2023 - ⭐ Goal 200 Stars!
 My first attempt at trying to maintain a repo for #hacktoberfest (YAY!)
-Your stars help this repo qualify for syndication libraries. Please star.
+Your stars help this repo qualify for syndication libraries. Please star BEFORE you are merged!
 
 Although this project is intended to be beginner friendly💗, it should not be easy🚫. Because some people might be really advanced at C++ or Python but never made a webpage before, I'm trusting that people don't use this repository for an easy pull request. **Tiny PRs won't be merged such as typos, spaces, spam.** Please stretch your limits🤓 and challenge yourself. For total beginners, I will be listing ongoing issues and enhancement ideas that you can partake in. If you have an idea or suggestion, feel free to raise an issue or start a  [Discussions](https://github.com/omicreativedev/hacktoberfest2023/discussions). This site is very basic, and I made it after taking a few lessons on freeCodeCamp.💖💖💖
 
