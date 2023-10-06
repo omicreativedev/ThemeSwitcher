@@ -55,6 +55,6 @@
 * Do not stray too far from the path! I don't have the capacity to deal with a lot of branch conflicts. Please stay within the the scope of creating pages and themes. Themes should work on all pages. Nothing should break. Everything should be in neat folders where it belongs so nothing becomes too messy.
 * Do not spam. This includes making PRs for small typos, fixing white space, etc. [Here are some examples of bad practices](https://twitter.com/shitoberfest). If it is a small change, just bring it up in a discussion or raise an issue.
 ## Note About Contributors.md
-  You should update this file when you make any request to merge to ensure your information is in this file.
+  You should update [this file](https://github.com/omicreativedev/hacktoberfest2023/blob/main/Contributors.md) when you make any request to merge to ensure your information is in this file.
   Once your information is in this file and you've merged one PR, you don't need to add it again unless it gets deleted.
   Please be careful not to delete other contributors.
