@@ -32,10 +32,10 @@
 * WE ARE NOT converting to LESS or SCSS for the purpose of this being beginner friendly.
 * If you create a theme with a unique feature or animation, be sure it will work with all pages even if it's not used.
   #### SOME THEME IDEAS
-* A Halloween Theme
-* A Winter Theme with Snow
-* A Hyperwave Theme
-* A Minimalist Theme
+  * A Halloween Theme
+  * A Winter Theme with Snow
+  * A Hyperwave Theme
+  * A Minimalist Theme
 ## OTHER PR IDEAS
 * Fix an Issue
 * Edit CONTRIBUTING.md to be clearer and cooler!
