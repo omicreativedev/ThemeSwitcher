@@ -27,7 +27,7 @@ Although this project is intended to be beginner friendly💗, it should not be 
 * Read about [CONTRIBUTING.md](https://github.com/omicreativedev/hacktoberfest2023/blob/main/CONTRIBUTING.md)
 * Read the [CODE_OF_CONDUCT.md](https://github.com/omicreativedev/hacktoberfest2023/blob/main/CODE_OF_CONDUCT.md)
 * Find or Raise an issue and wait for approval or just get started making a page or theme.
-* [Learn more about the fork workflow here 🏹](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow))
+* [Learn more about the fork workflow here 🏹](https://reflectoring.io/github-fork-and-pull/)
 * Fork the repository and make your changes
 * Create your PR!
 * Wait for feedback or approval (Tweet me or DM on X or Discord for faster response)
