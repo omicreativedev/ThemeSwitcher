@@ -15,9 +15,11 @@ My first attempt at trying to maintain a repo for #hacktoberfest
 
 ## This Project Is Perfect For Your First Pull Request
 
-📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free DIGITAL-SWAGS 🔥 from Digital Ocean AND MORE.**
+* Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest 
+* Get four pull requests (PRs) merged between October 1st-31st 
+* Earn DIGITAL-SWAG 🔥 from Digital Ocean
 
 ## THANK YOU!
-⭐ STAR this repository
-👽 [Follow me on Github](https://github.com/omicreativedev)
-🐤 [Follow me on ❌itter](https://twitter.com/omicreativedev)
+* ⭐ STAR this repository
+* 👽 [Follow me on Github](https://github.com/omicreativedev)
+* 🐤 [Follow me on ❌itter](https://twitter.com/omicreativedev)
