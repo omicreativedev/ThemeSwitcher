@@ -6,3 +6,5 @@ This tool is helpful for making an og:image for your profile page you create. Th
 ```
   <meta property="og:image" content="img/yourname/social.jpg">
 ```
+[Favicon Favicon Generator](https://favicon.io/)
+This tool will help you to make a favicon for your page. It may or may not show up (YMMV). A favicon is 32 (width) x 32 (height) and in ico format.
