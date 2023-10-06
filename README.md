@@ -23,7 +23,7 @@ Although this project is intended to be beginner friendly, it should not be easy
 
 ## This Project Is Perfect For Your First Pull Request
 
-* Read the [README.md](https://github.com/omicreativedev/hacktoberfest2023/.github/README.md)
+* Read the [README.md](https://github.com/omicreativedev/hacktoberfest2023/blob/main/README.md)
 * Look at how the [Website](https://omicreativedev.github.io/hacktoberfest2023/) works
 * Read about [CONTRIBUTING.md](https://github.com/omicreativedev/hacktoberfest2023/blob/main/CONTRIBUTING.md)
 * Read the [CODE_OF_CONDUCT.md](https://github.com/omicreativedev/hacktoberfest2023/blob/main/CODE_OF_CONDUCT.md)
