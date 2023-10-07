@@ -13,3 +13,8 @@ _What is the category of your contribution?_
 - [ ] (c) Debugging
 - [ ] (e) Enhancement
 - [ ] (f) Feature
+
+# Checklist
+- [ ] Checked for duplicates
+- [ ] I crafted this pull request entirely on my own, free from any trace of plagiarism.
+- [ ] Read the Docs.
