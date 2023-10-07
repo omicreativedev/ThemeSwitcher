@@ -38,6 +38,7 @@ Although this project is intended to be beginner friendly💗, it should not be 
 * Create your PR!
 * Wait for feedback or approval (Tweet me or DM on X or Discord for faster response)
 * Get Merged 🎉🎈🥳
+* [CLICK TO TWEET A RECOGNITION BADGE FOR CONTRIBUTING](https://twitter.com/intent/tweet?url=https%3A%2F%2Fomicreativedev.github.io%2Fhacktoberfest2023%2Fpages%2Fthankyou.html&via=%40omicreativedev&text=%uD83C%uDF88%uD83E%uDD73%20My%20PR%20was%20merged%20for%20Hacktoberfest&hashtags=%23hacktoberfest%20%23opensource)
 
 ## Don't Forget!
 * ⭐ STAR this repository!
