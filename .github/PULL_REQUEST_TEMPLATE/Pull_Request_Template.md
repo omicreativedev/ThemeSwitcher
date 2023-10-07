@@ -11,13 +11,15 @@ _What are the changes that you have applied?_
 
 ### Contribution
 _What is the category of your contribution?_
-- [ ] (a) Page  
-- [ ] (b) Theme
-- [ ] (c) Debugging
-- [ ] (e) Enhancement
-- [ ] (f) Feature
+- [ ] Page  
+- [ ] Theme
+- [ ] Debugging
+- [ ] Enhancement
+- [ ] Feature
 
 # Checklist
-- [ ] Checked for duplicates
-- [ ] I crafted this pull request entirely on my own, free from any trace of plagiarism.
-- [ ] Read the Docs.
+- [ ] I have read the documentation
+- [ ] I have ensured my fork/branch was updated
+- [ ] I have checked for and resolved conflicts
+- [ ] I crafted this pull request on my own, free from any plagiarism
+
