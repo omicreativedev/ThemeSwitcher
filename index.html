@@ -54,6 +54,8 @@
   </div>  
 
 <script>
+
+
     // Function to populate the page select dropdown
     function populatePageDropdown() {
         const pageSelect = document.getElementById("page-select");
@@ -62,16 +64,21 @@
             .then(data => {
                 const pageFiles = data.split("\n");
                 pageFiles.forEach(pageFileName => {
-                    const option = document.createElement("option");
-                    option.value = "pages/" + pageFileName;
-                    option.textContent = pageFileName;
-                    pageSelect.appendChild(option);
+                    // Trim the page file name to remove leading/trailing whitespace
+                    const trimmedFileName = pageFileName.trim();
+                    if (trimmedFileName !== "") {
+                        const option = document.createElement("option");
+                        option.value = "pages/" + trimmedFileName;
+                        option.textContent = trimmedFileName;
+                        pageSelect.appendChild(option);
+                    }
                 });
             })
             .catch(error => {
                 console.error("Error fetching page list:", error);
             });
     }
+
 
     // Function to populate the theme select dropdown
     function populateThemeDropdown() {
@@ -81,16 +88,21 @@
             .then(data => {
                 const themeFiles = data.split("\n");
                 themeFiles.forEach(themeFileName => {
-                    const option = document.createElement("option");
-                    option.value = "themes/" + themeFileName;
-                    option.textContent = themeFileName;
-                    themeSelect.appendChild(option);
+                    // Trim the theme file name to remove leading/trailing whitespace
+                    const trimmedFileName = themeFileName.trim();
+                    if (trimmedFileName !== "") {
+                        const option = document.createElement("option");
+                        option.value = "themes/" + trimmedFileName;
+                        option.textContent = trimmedFileName;
+                        themeSelect.appendChild(option);
+                    }
                 });
             })
             .catch(error => {
                 console.error("Error fetching theme list:", error);
             });
     }
+
 
     // Call the functions to populate the dropdowns
     populatePageDropdown();
