@@ -6,6 +6,9 @@ _What is the issue related to?_
 <!-- If so, What's the issue number? -->
 Issue Number: #ISSUE_NUMBER
 
+# Changes made
+_What are the changes that you have applied?_
+
 ### Contribution
 _What is the category of your contribution?_
 - [ ] (a) Page  
