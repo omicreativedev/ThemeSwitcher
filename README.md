@@ -1,4 +1,10 @@
 # hacktoberfest2023 - ⭐ Goal 200 Stars!
+
+📢 **Announcement: You do NOT need to work on issues in this repo. You can also just FORK IT and start working on a page or theme without approval.** Of course you are ALSO welcome to work on issues!
+* Read the Docs.
+* Give a ⭐
+* Don't break anything.
+
 My first attempt at trying to maintain a repo for #hacktoberfest (YAY!)
 Your stars help this repo qualify for syndication libraries. Please star BEFORE you are merged!
 
@@ -32,7 +38,6 @@ Although this project is intended to be beginner friendly💗, it should not be 
 * Create your PR!
 * Wait for feedback or approval (Tweet me or DM on X or Discord for faster response)
 * Get Merged 🎉🎈🥳
-
 
 ## Don't Forget!
 * ⭐ STAR this repository!
