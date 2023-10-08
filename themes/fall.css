@@ -12,6 +12,22 @@ body {
     color: #fff;
     margin: 0;
     padding: 0
+    color: #414f57;
+        background: linear-gradient(-45deg, #FFBB5C, #FF9B50, #E25E3E, #C63D2F);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+}
+
+.brg {
+
+
+    color: rgb(105, 56, 240);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
 }
 
 .profile-nav {
@@ -23,13 +39,10 @@ body {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    font-family: "Source Sans Pro", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: JetBrains Mono, monospace;
     font-weight: 300;
     text-align: center;
-    color: #414f57;
-    background: linear-gradient(-45deg, #FFBB5C, #FF9B50, #E25E3E, #C63D2F);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+   
     height: 100vh
 }
 
@@ -138,12 +151,14 @@ footer div.profile-footer {
 
 div.page-main {
     width: 85%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.058);
     border-radius: 10px;
     text-align: left;
     box-sizing: border-box;
     padding: 75px 25px;
     display: inline-block;
+    padding-bottom: 50px;
+    padding-top: 50px;
 
     margin-top: calc(((100vh - 565px) / 2))
 }
