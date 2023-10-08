@@ -18,7 +18,6 @@ Please give me 24 hours to respond to issues or pull requests. 😎
 This project is a simple website with a theme switcher and page switcher in Javascript. You can drop the theme switcher and/or page switcher into your project and it's highly customizable.
 * Flat file list of themes located in a theme folder so you can make multiple css files for your site!
 * Flat file list of pages located in a pages folder so you can make webpages, presentation slides, activities, etc.
-* Uses customizable select dropdowns but you can apply the actions to switches, checkbox, etc.
 * Magically ✨🧙‍♂️✨ switch your fancy theme to an <a href="https://venngage.com/blog/accessible-colors/">Accessible Color Scheme</a> or Darkmode 🐱‍👤
 
 🤩
