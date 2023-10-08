@@ -90,6 +90,14 @@
               option.value = "pages/" + pageFileName;
               option.textContent = pageFileName;
               pageSelect.appendChild(option);
+              // Trim the page file name to remove leading/trailing whitespace
+              const trimmedFileName = pageFileName.trim();
+              if (trimmedFileName !== "") {
+                const option = document.createElement("option");
+                option.value = "pages/" + trimmedFileName;
+                option.textContent = trimmedFileName;
+                pageSelect.appendChild(option);
+              }
             });
           })
           .catch((error) => {
@@ -109,6 +117,14 @@
               option.value = "themes/" + themeFileName;
               option.textContent = themeFileName;
               themeSelect.appendChild(option);
+              // Trim the theme file name to remove leading/trailing whitespace
+              const trimmedFileName = themeFileName.trim();
+              if (trimmedFileName !== "") {
+                const option = document.createElement("option");
+                option.value = "themes/" + trimmedFileName;
+                option.textContent = trimmedFileName;
+                themeSelect.appendChild(option);
+              }
             });
           })
           .catch((error) => {

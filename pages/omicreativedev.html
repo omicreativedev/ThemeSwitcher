@@ -58,25 +58,29 @@
     
   <script>
 
-
     // Function to populate the theme select dropdown
     function populateThemeDropdown() {
-        const themeSelect = document.getElementById("theme-select");
-        fetch("../themes_list.txt")
-            .then(response => response.text())
-            .then(data => {
-                const themeFiles = data.split("\n");
-                themeFiles.forEach(themeFileName => {
+    const themeSelect = document.getElementById("theme-select");
+    fetch("../themes_list.txt")
+        .then(response => response.text())
+        .then(data => {
+            const themeFiles = data.split("\n");
+            themeFiles.forEach(themeFileName => {
+                // Trim the theme file name to remove leading/trailing whitespace
+                const trimmedFileName = themeFileName.trim();
+                if (trimmedFileName !== "") {
                     const option = document.createElement("option");
-                    option.value = "../themes/" + themeFileName;
-                    option.textContent = themeFileName;
+                    option.value = "../themes/" + trimmedFileName;
+                    option.textContent = trimmedFileName;
                     themeSelect.appendChild(option);
-                });
-            })
-            .catch(error => {
-                console.error("Error fetching theme list:", error);
+                }
             });
-    }
+        })
+        .catch(error => {
+            console.error("Error fetching theme list:", error);
+        });
+}
+
 
     // Call the functions to populate the dropdowns
     populateThemeDropdown();
