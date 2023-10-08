@@ -30,4 +30,6 @@ Thank you!
 [jfmartinz](https://github.com/jfmartinz)
 * Added Issue Template
 
+[Creperi](https://github.com/Creperi)
+* Added Tritan.css file
      
