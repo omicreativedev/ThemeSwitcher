@@ -7,14 +7,29 @@
 
 🥳👉🏽 [Follow me on Github](https://github.com/omicreativedev) to stay notified of NEXT YEAR's #Hacktoberfest Repos!
 
+## ABOUT THIS PROJECT
+
 My first attempt at trying to maintain a repo for #hacktoberfest (YAY!)
 Your stars help this repo qualify for syndication libraries. Please star BEFORE you are merged!
+Please give me 24 hours to respond to issues or pull requests. 😎
 
-Although this project is intended to be beginner friendly 💗, it should not be easy 🚫. Because some people might be really advanced at C++ or Python but never made a webpage before, I'm trusting that people don't use this repository for an easy pull request. **Tiny PRs won't be merged such as typos, spaces, spam** without a significant contribution. Please stretch your limits 🤓 and challenge yourself 💪🏽.
+This project is a simple website with a theme switcher and page switcher in Javascript. You can drop the theme switcher and/or page switcher into your project and it's highly customizable.
+* Flat file list of themes located in a theme folder so you can make multiple css files for your site!
+* Flat file list of pages located in a pages folder so you can make webpages, presentation slides, activities, etc.
+* Uses customizable select dropdowns but you can apply the actions to switches, checkbox, etc.
+
+☝ Although this project is intended to be beginner friendly 💗, it should not be easy 🚫. Because some people might be really advanced at C++ or Python but never made a webpage before, I'm trusting that people don't use this repository for an easy pull request. **Tiny PRs won't be merged such as typos, spaces, spam** without a significant contribution. Please stretch your limits 🤓 and challenge yourself 💪🏽.
 
 For total beginners, I will be listing ongoing issues and enhancement ideas that you can partake in. If you have an idea or suggestion, feel free to raise an issue or start a  [Discussions](https://github.com/omicreativedev/hacktoberfest2023/discussions). This site is very basic, and I made it after taking a few lessons on freeCodeCamp. 💖💖💖 Anyone can do it!
 
 ![BANNER](https://repository-images.githubusercontent.com/701103132/df77a062-b115-4b01-8c8e-a5d7d9ebd6c7)
+
+## Stack
+<div align="center">
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+</div>
 
 ## Contributors - Your Image Will Show Here! OPEN FIRST Pull Request 🎉
 (updates every 7 days)
