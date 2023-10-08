@@ -14,44 +14,68 @@
 </head>
 <body>
  <div class="profile-content">  
- <div class="page-main">
+ <div class="page-main" >
 
     <main>
-        <h2>Welcome to my First Hacktoberfest Repo!</h2>
-        <p>I created this repository in an effort to learn how to maintain a public respo hands on. So I created this activity as a playground for new students, hacktoberfest first-timers, and experienced contributors that want to help us learn!</p>
-<h2>Contribution Objectives</h2>
-<p>Your contributions to this project should be significant and challenging "for you" which is very relative to your personal experience. You may be a great Java programmer and terrible at HTML. So I won't be discluding anyone that makes any impactful contribution. Please look at the Code of Conduct and Contribution documents on the repository for general rules and guidelines.</p>
+        <h2 class="heading"><span style="color:rgb(127, 255, 238) ; "><strong>Welcome to my First</strong></span> <span style="color: rgb(248, 58, 0); font-family: JetBrains Mono, monospace;"><strong>Hacktoberfest</strong></span> <span style="color: rgb(127, 255, 238);"><strong>Repo!</strong></span></h2>
+        <p id="dark_text">I created this repository in an effort to learn how to maintain a public respo hands on. So I created this activity as a playground for new students, hacktoberfest first-timers, and experienced contributors that want to help us learn!</p>
+
+        <h2 class="heading"><span style="color:rgb(127, 255, 238) ; ">Contributions</span>
+            <span style="color: rgb(127, 255, 238);">Objectives</span></h2>
+
+<p id="dark_text">Your contributions to this project should be significant and challenging "for you" which is very relative to your personal experience. You may be a great Java programmer and terrible at HTML. So I won't be discluding anyone that makes any impactful contribution. Please look at the Code of Conduct and Contribution documents on the repository for general rules and guidelines.</p>
   
-           <h3>PR 1 - Create a Page</h3>
+          <div id="space" style="padding-top: 10px;"> <h3 class="brg" style="padding-bottom: 0;"> PR 1 </h3><h4 style="padding-top: o;"> Create a Page</h4>
 
 <!-- Page Selection Dropdown -->
 <div class="page-selection">
-    <label for="page-select">Example Pages:</label>
-    <select style="cursor: pointer;" id="page-select" onchange="changePage()">
-        <option  value="">Select A Page</option>
+    <label for="page-select" id="dark_text">Example Pages:</label>
+    <select id="page-select" style="cursor: pointer;" onchange="changePage()">
+        <option value="">Select A Page</option>
     </select>
 </div>
 
-<h3>PR 2 - Create a Theme</h3>
+</div>
+
+<div class="space">
+<h3 class="brg"> PR 2 </h3><h4> Create a Theme</h4>
 
 <!-- Theme Switching Dropdown -->
 <div class="theme-switch">
-    <label for="theme-select">Example Themes:</label>
-    <select  style="cursor: pointer;" id="theme-select" onchange="changeTheme()">
-        <option value="">Default Theme</option>
+    <label for="theme-select" id="dark_text" >Example Themes:</label>
+    <select id="theme-select" style="cursor: pointer;" onchange="changeTheme()">
+        <option value="" >Default Theme</option>
     </select>
+</div>
 </div>
 
 
 
-         
-               <h3>PR 3 - Fix Issue</h3>
-               <h3>PR 4 - Create Enhancement</h3>
+         <div class="space"><h3 class="brg"> PR 3 </h3>
+            <h4 style="padding-top: 5px;">Fix Issue : </h4>
+       <span id="dark_text"  style="padding-top: 30px;">Resolve the conflicts, find effecient ways to add more pages and for beginners to easily undersatnd the repository and contribute.  
+        </span></div>
+              
+              <div class="space"><h3 class="brg"> PR 4 </h3><h4>Create Enhancement</h4>
+            <span id="dark_text" style="padding-top: 20px;">Create Personal websites and add themes according to your favourite songs.
+            </span></div> 
     </main>
-    </div>
+    
+
+    
+ </div>
 
 
   </div>  
+
+<div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/sshunamon/">Linkedin</a>
+    <a class="footer-link" href="https://twitter.com/omicreativedev">Twitter(X)</a>
+    <a class="footer-link" href="https://qoto.org/@omi">Website</a>
+    <p class="copyright">© 2023 OmniCreativeDev @ Hacktoberfest2023.</p>
+</div>
+
+
 
 <script src="./script.js"></script>
 </body>
