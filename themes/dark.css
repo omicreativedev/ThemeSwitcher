@@ -4,13 +4,19 @@
   margin: 0;
   padding: 0;
 }
+#dark_text{
+   color: white;
+}
 
 /* Default Theme Styles */
 body {
-  background-color: #000000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+
+background-color: #000000;
+color: #414f57;
+background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
 }
 
 .profile-nav {
@@ -18,19 +24,45 @@ body {
   margin: 4px;
 }
 
+a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+}
+.brg {
+    
+
+        color: rgb(236, 66, 55);
+        text-transform: uppercase;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    
+}
+
+
 .profile-content {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 300;
   text-align: center;
   color: #414f57;
+  font-weight:300;
   background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+    font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    display: block;
+    align-self: end;
+height:100vh
 }
 
 @keyframes gradient {
@@ -89,6 +121,7 @@ body {
 
 /*SELECT BOX FOR THEME DROPDOWN*/
 select {
+
   /* styling */
   box-shadow: 3px 4px 0 0 #4e6096;
   background-color: white;
@@ -138,13 +171,12 @@ footer div.profile-footer {
 }
 div.page-main {
   width: 85%;
-  background-color: white;
+  background-color:rgba(255, 255, 255, 0.058);
   border-radius: 10px;
   text-align: left;
   box-sizing: border-box;
   padding: 75px 25px;
   display: inline-block;
-
   margin-top: calc(((100vh - 565px) / 2));
 }
 

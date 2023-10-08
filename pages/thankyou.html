@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="You've Earned a Badge!">
@@ -14,91 +14,151 @@
     <!-- Favicon is a small image that appears in the tab of some browsers. -->
     <link rel="icon" href="img/omicreativedev/favicon.ico">
     <title>You've Earned a Badge!</title>
-</head>
+    <style>
+      body {
+        margin: 0;
+        < !-- display: flex;
+        -->justify-content: center;
+        align-items: center;
+        < !-- height: 100vh;
+        -->background-color: #f1f1f1;
+      }
 
-<body>
- <div class="profile-content">  
- <div class="profile-nav">
+      .profile-main {
+        text-align: center !important;
+        padding: 0;
+        margin: 0;
+      }
 
-<a href="../index.html" class="myButton">Home</a>  
+      .badge {
+        width: 196px;
+        height: 230px;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+      }
 
-<!-- Theme Switching Dropdown -->
-<div class="theme-switch">
-    <select id="theme-select" onchange="changeTheme()">
-        <option value="">Switch Theme</option>
-    </select>
-</div>
+      .badge img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
 
+      .confetti {
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        background-color: #f39c12;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        pointer-events: none;
+        animation: fall 3s ease infinite;
+      }
 
- </div>
-    <div class="profile-main">
-        <section >
-        
-        
-            <img src="https://omicreativedev.github.io/hacktoberfest2023/pages/img/thankyou/contributor_badge.png" alt="Official Contributor Badge" height="231" width="196">
-        </section>
-        <section class="profile-info">
-            <h1 class="name">Contributor Recognition</h1>
-        
-        </section>
-        <section class="profile-links">
-          <div align="center">
-<a href="https://github.com/omicreativedev/hacktoberfest2023/graphs/contributors">
-<!-- <img src="https://contrib.rocks/image?repo=omicreativedev/hacktoberfest2023"> -->
- <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=500&spacing=2">
-</a>
-</div>
-        </section>
-    </div>
-    <footer><div class="profile-footer">
-   
+      @keyframes fall {
+        0% {
+          transform: translateY(-100vh) rotate(0deg);
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-content">
+      <div class="profile-nav">
+        <a href="../index.html" class="myButton">Home</a>
+        <!-- Theme Switching Dropdown -->
+        <div class="theme-switch">
+          <select id="theme-select" onchange="changeTheme()">
+            <option value="">Switch Theme</option>
+          </select>
         </div>
-    </footer>
+      </div>
+      <div class="profile-main">
+        <div class="badge" onclick="burstConfetti()">
+          <img src="https://omicreativedev.github.io/hacktoberfest2023/pages/img/thankyou/contributor_badge.png" alt="Official Contributor Badge" height="231" width="196">
+        </div>
+        <section class="profile-info">
+          <h2 class="name">Contributor Recognition </h1>
+        </section>
+        <section>
+          <div align="center">
+            <a href="https://github.com/omicreativedev/hacktoberfest2023/graphs/contributors">
+              <!-- <img src="https://contrib.rocks/image?repo=omicreativedev/hacktoberfest2023"> -->
+              <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=180&spacing=2&avatarSize=20">
+            </a>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="profile-footer"></div>
+      </footer>
     </div>
-    
-  <script>
+    <script>
+      function createConfetti(x, y) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = x + 'px';
+        confetti.style.top = y + 'px';
+        document.body.appendChild(confetti);
+        setTimeout(() => {
+          confetti.remove();
+        }, 3000);
+      }
 
+      function burstConfetti() {
+        for (let i = 0; i < 100; i++) {
+          const x = Math.random() * window.innerWidth;
+          const y = Math.random() * window.innerHeight;
+          createConfetti(x, y);
+        }
+      }
+      // Trigger confetti burst effect on page load
+      window.onload = function() {
+        burstConfetti();
+      }
 
-    function populateThemeDropdown() {
+      function populateThemeDropdown() {
         const themeSelect = document.getElementById("theme-select");
-        fetch("../themes_list.txt")
-            .then(response => response.text())
-            .then(data => {
-                const themeFiles = data.split("\n");
-                themeFiles.forEach(themeFileName => {
-                    // Trim the theme file name to remove leading/trailing whitespace
-                    const trimmedFileName = themeFileName.trim();
-                    if (trimmedFileName !== "") {
-                        const option = document.createElement("option");
-                        option.value = "../themes/" + trimmedFileName;
-                        option.textContent = trimmedFileName;
-                        themeSelect.appendChild(option);
-                    }
-                });
-            })
-            .catch(error => {
-                console.error("Error fetching theme list:", error);
-            });
-    }
-
-
-    // Call the functions to populate the dropdowns
-    populateThemeDropdown();
-
-
-
-    // Function to handle theme selection change
-    function changeTheme() {
+        fetch("../themes_list.txt").then(response => response.text()).then(data => {
+          const themeFiles = data.split("\n");
+          themeFiles.forEach(themeFileName => {
+            // Trim the theme file name to remove leading/trailing whitespace
+            const trimmedFileName = themeFileName.trim();
+            if (trimmedFileName !== "") {
+              const option = document.createElement("option");
+              option.value = "../themes/" + trimmedFileName;
+              option.textContent = trimmedFileName;
+              themeSelect.appendChild(option);
+            }
+          });
+        }).catch(error => {
+          console.error("Error fetching theme list:", error);
+        });
+      }
+      // Call the functions to populate the dropdowns
+      populateThemeDropdown();
+      // Function to handle theme selection change
+      function changeTheme() {
         const selectedValue = document.getElementById("theme-select").value;
         if (selectedValue !== "") {
-            // Change the theme by updating the stylesheet
-            document.getElementById("theme-style").href = selectedValue;
+          // Change the theme by updating the stylesheet
+          document.getElementById("theme-style").href = selectedValue;
         }
-    }
-
-    // Attach the changePage and changeTheme functions to the select elements' onchange events
-  
-    document.getElementById("theme-select").addEventListener("change", changeTheme);
-</script>
-</body>
+      }
+      // Attach the changePage and changeTheme functions to the select elements' onchange events
+      document.getElementById("theme-select").addEventListener("change", changeTheme);
+    </script>
+  </body>
 </html>
