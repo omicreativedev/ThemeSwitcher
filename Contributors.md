@@ -31,5 +31,4 @@ Thank you!
 * Added Issue Template
 
 [Creperi](https://github.com/Creperi)
-* Added Tritan.css file
-     
+* Added main.js and replaced the code with the file path on .html files    
