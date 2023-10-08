@@ -150,7 +150,7 @@ div.page-main {
 
 div.profile-main {
   width: 400px;
-  background: linear-gradient(115deg, #eddddd, #8980c7);
+  background-color: white;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
@@ -158,6 +158,9 @@ div.profile-main {
   display: inline-block;
   height: 490px;
   margin-top: calc(((100vh - 565px) / 2));
+}
+div.my-profile {
+  background: linear-gradient(115deg, #eddddd, #8980c7);
 }
 
 div.profile-main section.profile-photo {
@@ -198,7 +201,7 @@ div.profile-main section.profile-links {
   padding-top: 37.5px;
   padding-bottom: 12.5px;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 div.profile-main section.profile-links a {
