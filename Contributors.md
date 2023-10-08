@@ -30,4 +30,5 @@ Thank you!
 [jfmartinz](https://github.com/jfmartinz)
 * Added Issue Template
 
-     
+  [dxeon](https://github.com/dxeon)
+* Refactor populateThemeDropdown() function
