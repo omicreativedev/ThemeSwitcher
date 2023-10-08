@@ -1,27 +1,22 @@
 
     // Function to populate the page select dropdown
-    function populatePageDropdown() {
-        const pageSelect = document.getElementById("page-select");
-        fetch("pages_list.txt")
-            .then(response => response.text())
-            .then(data => {
-                const pageFiles = data.split("\n");
-                pageFiles.forEach(pageFileName => {
-                    // Trim the page file name to remove leading/trailing whitespace
-                    const trimmedFileName = pageFileName.trim();
-                    if (trimmedFileName !== "") {
-                        const option = document.createElement("option");
-                        option.value = "pages/" + trimmedFileName;
-                        option.textContent = trimmedFileName;
-                        option.style.cursor="pointer";
-                        pageSelect.appendChild(option);
-                       
-                    }
-                });
-            })
-            .catch(error => {
-                console.error("Error fetching page list:", error);
-            });
+    async function populateThemeDropdown() {
+      try {
+        const themeSelect = document.getElementById("theme-select");
+        const response = await fetch("../themes_list.txt");
+        const data = await response.text();
+        const themeFiles = data.split("\n");
+    
+        themeFiles.forEach((themeFileName) => {
+          const trimmedFileName = themeFileName.trim();
+          if (trimmedFileName !== "") {
+            const option = new Option(trimmedFileName, `../themes/${trimmedFileName}`);
+            themeSelect.appendChild(option);
+          }
+        });
+      } catch (error) {
+        console.error("Error fetching theme list:", error);
+      }
     }
 
 
