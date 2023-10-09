@@ -36,7 +36,7 @@
     themeFiles.forEach((themeFileName) => {
           const trimmedFileName = themeFileName.trim();
           if (trimmedFileName !== "") {
-            const option = new Option(trimmedFileName, `../themes/${trimmedFileName}`);
+            const option = new Option(trimmedFileName, `themes/${trimmedFileName}`);
           themeSelect.appendChild(option);
       }
     });
