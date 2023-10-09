@@ -14,7 +14,7 @@ body:
   - type: textarea
     id: describe-the-bug
     attributes:
-      label: Describe the bug
+      label: Describe the Bug
       description: Please provide a clear and detailed description of the bug you've encountered.
       placeholder: Describe the issue you're facing, including any error messages, unexpected behavior, and steps to reproduce.
     validations:
@@ -22,7 +22,7 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: Expected behavior
+      label: Expected Behavior
       description: What did you expect to happen instead of the bug you've described?
       placeholder: Explain the expected outcome or behavior.
     validations:
@@ -30,14 +30,14 @@ body:
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce
       description: Please provide clear, step-by-step instructions on how to reproduce the bug.
       placeholder: List the exact steps you followed to encounter the bug.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Additional Context
-      description: Additional information about the bug (Optional).
+      label: Additional Context, Suggestions or Instructions
+      description: Additional information (Optional).
     validations:
       required: false

@@ -1,0 +1,35 @@
+name: "💡 New Idea"
+description: Have an idea? Explain it here.
+title: "💡 [IDEA] - <title>"
+labels: ["hacktoberfest"]
+body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Idea Verification
+      description: Before you create an idea, please verify that you've visited the site and read the Docs.
+      options:
+        - label: I have viewed the site and read the documentation.
+          required: true
+  - type: textarea
+    id: describe-the-idea
+    attributes:
+      label: Describe the Idea
+      description: Please provide a clear and detailed description of the idea you have.
+      placeholder: Describe the idea.
+    validations:
+      required: false
+  - type: textarea
+    id: additional-tools
+    attributes:
+      label: Additional Tools
+      description: Will any additional tools or libraries be needed to implement this idea?
+      placeholder: List links, images, concepts, etc.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional Context, Suggestions or Instructions
+      description: Additional information (Optional).
+    validations:
+      required: false

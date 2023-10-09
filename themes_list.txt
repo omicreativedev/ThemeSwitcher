@@ -1,3 +1,5 @@
 light.css
 dark.css
 galaxy.css
+fall.css
+tritan.css

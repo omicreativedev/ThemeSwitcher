@@ -2,6 +2,7 @@
 * Fork the Repo. You can start making themes and pages without approval to get started.
 * If handling an Issue or Bug or Enhancement, PLEASE WAIT FOR APPROVAL to get started.
 * YES, you may PROPOSE YOUR IDEAS!
+* **ALWAYS MAKE SURE YOUR BRANCH IS UP TO DATE AND CONFLICTS RESOLVED (IF POSSIBLE) BEFORE YOU PR** <3
 ## PR 1 - Create A New Profile Page in Pages Folder
 * Copy the omicreativedev.html and rename it to YOURGITHUBUSERNAME.html
 * YOURGITHUBUSERNAME.html should be in the same folder as omicreativedev.html
@@ -45,9 +46,7 @@
 ## OTHER PR IDEAS
 * Fix an Issue
 * Edit CONTRIBUTING.md to be clearer and cooler!
-* Add cool features to README.md or other docs
 * Suggest an Enhancement (don't suggest what you will not create)
-* Rewrite the Home Page (index.html) to explain everything better
 * Improve any standardization
 * Create TEMPLATES for themes or pages and include instructions as comments
 ## WHAT NOT TO DO
