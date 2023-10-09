@@ -32,3 +32,7 @@ Thank you!
 
   [dxeon](https://github.com/dxeon)
 * Refactor populateThemeDropdown() function
+
+
+[debuuuu007](https://github.com/debuuuu007)
+* added a theme tritan and also refactor a little part of css code

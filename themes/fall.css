@@ -9,25 +9,25 @@
 /* Default Theme Styles */
 body {
 
-    background-color: #d5904b;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    color: #414f57;
-        background: linear-gradient(-45deg, #FFBB5C, #FF9B50, #E25E3E, #C63D2F);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+  background-color: #d5904b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #414f57;
+  background: linear-gradient(-45deg, #FFBB5C, #FF9B50, #E25E3E, #C63D2F);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .brg {
 
 
-    color: rgb(105, 56, 240);
-    text-transform: uppercase;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+  color: rgb(105, 56, 240);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 
 
 }
@@ -42,7 +42,7 @@ body {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
- font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
   font-weight: 300;
   text-align: center;
   color: #414f57;
@@ -165,8 +165,8 @@ div.page-main {
   text-align: left;
   box-sizing: border-box;
   display: inline-block;
-      padding-bottom: 50px;
-    padding-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   margin-top: calc(((100vh - 565px) / 2));
 }
 

@@ -9,25 +9,24 @@
 body {
 
   background-color: #23a6d5;
- 
-color: #414f57;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-margin:0;
-padding:0
 
+  color: #414f57;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  padding: 0
 }
 
 .brg {
 
 
-    color: rgb(240, 222, 56);
-    text-transform: uppercase;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+  color: rgb(240, 222, 56);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 
 }
 
@@ -72,24 +71,29 @@ padding:0
     background-position: 0 50%;
   }
 
+
   50% {
     background-position: 100% 50%;
   }
+
 
   100% {
     background-position: 0 50%;
   }
 }
 
+
 .profile-nav a {
   color: #222222;
 }
 
 .theme-switch {
-  display: inline; /* Use "inline-block" for more control over spacing */
+  display: inline;
+  /* Use "inline-block" for more control over spacing */
 }
 
 .myButton {
+
   box-shadow: 3px 4px 0 0 #4e6096;
   background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
   background-color: #ee7752;
@@ -100,6 +104,7 @@ padding:0
   padding: 0.5em 1em;
   text-decoration: none;
   text-shadow: 0 1px 0 #0c4a3a;
+
 }
 
 .myButton:hover {
@@ -109,6 +114,7 @@ padding:0
 
 /*SELECT BOX FOR THEME DROPDOWN*/
 select {
+
   /* styling */
   box-shadow: 3px 4px 0 0 #4e6096;
   background-color: white;
@@ -125,6 +131,7 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+
 }
 
 /*Selectbox Arrow*/
@@ -156,23 +163,25 @@ footer div.profile-footer {
   position: absolute;
   bottom: 0;
 }
+
 div.page-main {
 
   width: 85%;
- background-color:rgba(255, 255, 255, 0.044);
+  background-color: rgba(255, 255, 255, 0.044);
   border-radius: 10px;
   text-align: left;
   box-sizing: border-box;
   padding: 75px 25px;
   display: inline-block;
   padding-top: 50px;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 
 
   margin-top: calc(((100vh - 565px) / 2));
 }
 
 div.profile-main {
+
 
   width: 400px;
   background-color: white;
@@ -184,8 +193,10 @@ div.profile-main {
   height: 490px;
   margin-top: calc(((100vh - 565px) / 2));
 }
+
 div.my-profile {
   background: linear-gradient(115deg, #eddddd, #8980c7);
+
 
 }
 
@@ -199,15 +210,17 @@ div.profile-main section.profile-photo img {
 }
 
 div.profile-main section.profile-info {
-  height: 100px;
+
+ height:80px
 }
 
 div.profile-main section.profile-info h1 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 25px;
-  padding-top: 25px;
-  padding-bottom: 10px;
+font-size:30px;
+font-weight:600;
+line-height:25px;
+padding-top:25px;
+padding-bottom:10px
+
 }
 
 div.profile-main section.profile-info h2 {
@@ -223,11 +236,13 @@ div.profile-main section.profile-info div {
 }
 
 div.profile-main section.profile-links {
+
   height: 100px;
   padding-top: 37.5px;
   padding-bottom: 12.5px;
   box-sizing: border-box;
   margin-top: 45px;
+
 }
 
 div.profile-main section.profile-links a {
@@ -251,6 +266,12 @@ div.profile-main section.profile-links a:hover svg path {
   fill: #414f57;
 }
 
+
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
+}
+
 @media only screen and (max-width: 444.44px) {
   div.main {
     width: 90%;
@@ -258,6 +279,7 @@ div.profile-main section.profile-links a:hover svg path {
 }
 
 @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+
   div.main {
     margin: 5vw 0;
     margin-bottom: 0;
