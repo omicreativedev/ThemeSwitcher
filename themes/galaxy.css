@@ -78,7 +78,8 @@ display:inline-block;
 cursor:pointer;
 padding:.5em 1em;
 text-decoration:none;
-text-shadow:0 1px 0 #0c4a3a
+text-shadow:0 1px 0 #0c4a3a;
+margin-right: 10px;
 }
 
 .myButton:hover {
@@ -154,7 +155,7 @@ text-align:center;
 box-sizing:border-box;
 padding:75px 25px;
 display:inline-block;
-height:490px;
+height:515px;
 margin-top:calc(((100vh - 565px) / 2))
 }
 
@@ -168,12 +169,12 @@ border-radius:50%
 }
 
 div.profile-main section.profile-info {
-height:100px
+height:80px
 }
 
 div.profile-main section.profile-info h1 {
-font-size:24px;
-font-weight:400;
+font-size:30px;
+font-weight:600;
 line-height:25px;
 padding-top:25px;
 padding-bottom:10px
@@ -187,7 +188,6 @@ line-height:30px
 
 div.profile-main section.profile-links {
 height:100px;
-padding-top:37.5px;
 padding-bottom:12.5px;
 box-sizing:border-box
 }
@@ -211,6 +211,11 @@ transition:fill .25s ease
 
 div.profile-main section.profile-links a:hover svg path {
 fill:#414f57
+}
+
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
 }
 
 @media only screen and (max-width: 444.44px) {
