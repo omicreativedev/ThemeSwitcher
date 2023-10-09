@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pranav Reddy's Profile">
+    <meta property="og:description" content="Pranav Reddy's Hacktoberfest Profile Card">
+    <meta name="description" content="Pranav Reddy's Hacktoberfest Profile Card">
+    <meta property="og:image" content="https://omicreativedev.github.io/hacktoberfest2023/pages/img/omicreativedev/omicreative-social.jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="../themes/light.css">
+    <link rel="icon" href="img/pranavreddy/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <style>
+        .profile-links .ti {
+            font-size: 45px;
+            color: #747373;
+            border-radius: 40%;
+            padding: 0.5rem;
+            transition: 0.1s;
+        }
+
+        .profile-links a:hover .ti {
+            color: #292929;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .profile-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .myButton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .myButton:hover {
+            background-color: #0056b3;
+        }
+
+        .theme-switch {
+            float: right;
+        }
+
+        .profile-main {
+            width: 700px;
+        }
+    
+
+        .profile-photo img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: #333;
+        }
+
+        .profile-links {
+            margin-top: 20px;
+        }
+
+        .profile-links a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+    <title>Pranav Reddy</title>
+</head>
+
+<body>
+<div class="profile-content">
+    <div class="profile-nav">
+        <a href="../index.html" class="myButton">Home</a>
+
+        <div class="theme-switch">
+            <select id="theme-select" onchange="changeTheme()">
+                <option value="">Default Theme</option>
+            </select>
+        </div>
+    </div>
+    <div class="profile-main">
+        <section class="profile-photo">
+            <img src="https://avatars.githubusercontent.com/u/123138487?v=4" alt="Pranav Reddy">
+        </section>
+        <section class="profile-info">
+            <h1 class="name">Pranav Reddy</h1>
+            <h2>Computer Science Student</h2>
+            <div>
+                I'm a B.Tech student specializing in AI, skilled in various programming languages and ML
+              </div>
+        </section>
+        <section class="profile-links">
+            <a href="https://twitter.com/Pranav77203" target="_blank">
+                <i class="ti ti-brand-x"></i>
+            </a>
+            <a href="https://github.com/772003pranav" target="_blank">
+                <i class="ti ti-brand-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pranav-reddy-sanikommu-270723270" target="_blank">
+                <i class="ti ti-brand-linkedin"></i>
+            </a>
+        </section>
+    </div>
+    <footer>
+        <div class="profile-footer">
+        </div>
+    </footer>
+</div>
+
+<script>
+    async function populateThemeDropdown() {
+        try {
+            const themeSelect = document.getElementById("theme-select");
+            const response = await fetch("../themes_list.txt");
+            const data = await response.text();
+            const themeFiles = data.split("\n");
+
+            themeFiles.forEach((themeFileName) => {
+                const trimmedFileName = themeFileName.trim();
+                if (trimmedFileName !== "") {
+                    const option = new Option(trimmedFileName, `../themes/${trimmedFileName}`);
+                    themeSelect.appendChild(option);
+                }
+            });
+        } catch (error) {
+            console.error("Error fetching theme list:", error);
+        }
+    }
+
+    populateThemeDropdown();
+
+    function changeTheme() {
+        const selectedValue = document.getElementById("theme-select").value;
+        if (selectedValue !== "") {
+            document.getElementById("theme-style").href = selectedValue;
+        }
+    }
+
+    document.getElementById("theme-select").addEventListener("change", changeTheme);
+</script>
+</body>
+</html>
