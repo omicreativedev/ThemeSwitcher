@@ -13,6 +13,7 @@ margin:0;
 padding:0
 }
 
+
 .profile-nav {
 text-align:left;
 margin:4px
@@ -26,10 +27,12 @@ font-family:"Source Sans Pro",'Lucida Sans','Lucida Sans Regular','Lucida Grande
 font-weight:300;
 text-align:center;
 color:#414f57;
-background:linear-gradient(-45deg, #222222, #555555, #111111, #666666);
+background:linear-gradient(#222222, #111111);
 background-size:400% 400%;
 animation:gradient 15s ease infinite;
-height:100vh
+height:100vh;
+
+position:relative;
 }
 
 @keyframes gradient {
@@ -46,7 +49,7 @@ background-position:0 50%
 }
 }
 
-@-webkit-keyframes {
+/* @-webkit-keyframes {
 0% {
 background-position:0 50%
 }
@@ -58,7 +61,7 @@ background-position:100% 50%
 100% {
 background-position:0 50%
 }
-}
+} */
 
 .profile-nav a {
 color:#fff
@@ -70,6 +73,7 @@ color:#fff
 
 .myButton {
 box-shadow:3px 4px 0 0 #4e6096;
+margin:10px;
 background:linear-gradient(to bottom,#ee7752 5%,#e73c7d 100%);
 background-color:#ee7752;
 border-radius:10px;
@@ -78,7 +82,8 @@ display:inline-block;
 cursor:pointer;
 padding:.5em 1em;
 text-decoration:none;
-text-shadow:0 1px 0 #0c4a3a
+text-shadow:0 1px 0 #0c4a3a;
+margin-right: 10px;
 }
 
 .myButton:hover {
@@ -102,8 +107,8 @@ margin:0;
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
 box-sizing:border-box;
--webkit-appearance:none;
--moz-appearance:none
+/* -webkit-appearance:none;
+-moz-appearance:none */
 }
 
 /*Selectbox Arrow*/
@@ -153,7 +158,7 @@ text-align:center;
 box-sizing:border-box;
 padding:75px 25px;
 display:inline-block;
-height:490px;
+height: 515px;
 margin-top:calc(((100vh - 565px) / 2))
 }
 
@@ -167,12 +172,12 @@ border-radius:50%
 }
 
 div.profile-main section.profile-info {
-height:100px
+height:80px
 }
 
 div.profile-main section.profile-info h1 {
-font-size:24px;
-font-weight:400;
+font-size:30px;
+font-weight:600;
 line-height:25px;
 padding-top:25px;
 padding-bottom:10px
@@ -186,7 +191,6 @@ line-height:30px
 
 div.profile-main section.profile-links {
 height:100px;
-padding-top:37.5px;
 padding-bottom:12.5px;
 box-sizing:border-box
 }
@@ -210,6 +214,12 @@ transition:fill .25s ease
 
 div.profile-main section.profile-links a:hover svg path {
 fill:#414f57
+}
+
+
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
 }
 
 @media only screen and (max-width: 444.44px) {
