@@ -29,7 +29,7 @@
     async function populateThemeDropdown() {
       try {
         const themeSelect = document.getElementById("theme-select");
-        const response = await fetch("../themes_list.txt");
+        const response = await fetch("themes_list.txt");
         const data = await response.text();
         const themeFiles = data.split("\n");
 
