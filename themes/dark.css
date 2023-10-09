@@ -20,16 +20,19 @@ body {
 
 }
 
+
 .profile-nav {
   text-align: left;
   margin: 4px;
 }
+
 
 a {
   color: white;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
+
 }
 
 a:hover {
@@ -82,10 +85,12 @@ a:hover {
   }
 }
 
+
 @-webkit-keyframes {
   0% {
     background-position: 0 50%;
   }
+
 
   50% {
     background-position: 100% 50%;
@@ -95,6 +100,7 @@ a:hover {
     background-position: 0 50%;
   }
 }
+
 
 .profile-nav a {
   color: #fff;
@@ -106,6 +112,7 @@ a:hover {
 }
 
 .myButton {
+
   box-shadow: 3px 4px 0 0 #4e6096;
   background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
   background-color: #ee7752;
@@ -126,6 +133,7 @@ a:hover {
 /*SELECT BOX FOR THEME DROPDOWN*/
 select {
 
+
   /* styling */
   box-shadow: 3px 4px 0 0 #4e6096;
   background-color: white;
@@ -142,6 +150,7 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+
 }
 
 /*Selectbox Arrow*/
@@ -186,6 +195,7 @@ div.page-main {
 }
 
 div.profile-main {
+
   width: 400px;
   background-color: white;
   border-radius: 10px;
@@ -200,6 +210,7 @@ div.profile-main {
 div.my-profile {
   background: rgb(245, 245, 245);
   background: radial-gradient(circle, rgba(245, 245, 245, 1) 8%, rgba(22, 29, 29, 1) 100%);
+
 }
 
 div.profile-main section.profile-photo {
@@ -212,6 +223,7 @@ div.profile-main section.profile-photo img {
 }
 
 div.profile-main section.profile-info {
+
   height: 100px;
 }
 
@@ -221,6 +233,7 @@ div.profile-main section.profile-info h1 {
   line-height: 25px;
   padding-top: 25px;
   padding-bottom: 10px;
+
 }
 
 div.profile-main section.profile-info h2 {
@@ -236,11 +249,13 @@ div.profile-main section.profile-info div {
 }
 
 div.profile-main section.profile-links {
+
   height: 100px;
   padding-top: 37.5px;
   padding-bottom: 12.5px;
   box-sizing: border-box;
   margin-top: 45px;
+
 }
 
 div.profile-main section.profile-links a {
@@ -264,6 +279,12 @@ div.profile-main section.profile-links a:hover svg path {
   fill: #414f57;
 }
 
+
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
+}
+
 @media only screen and (max-width: 444.44px) {
   div.main {
     width: 90%;
@@ -271,6 +292,7 @@ div.profile-main section.profile-links a:hover svg path {
 }
 
 @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+
   div.main {
     margin: 5vw 0;
     margin-bottom: 0;
@@ -280,3 +302,4 @@ div.profile-main section.profile-links a:hover svg path {
     position: relative;
   }
 }
+

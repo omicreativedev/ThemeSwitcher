@@ -7,12 +7,14 @@
 
 /* Default Theme Styles */
 body {
+
   color: #414f57;
   background: linear-gradient(-45deg, #440760, #e73c7e, #9F4590, #000761);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: 0;
   padding: 0
+
 }
 
 .brg {
@@ -38,6 +40,7 @@ body {
 }
 
 .profile-content {
+
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -67,19 +70,24 @@ body {
   }
 }
 
+
 @-webkit-keyframes {
   0% {
     background-position: 0 50%;
   }
 
+
   50% {
     background-position: 100% 50%;
   }
+
+
 
   100% {
     background-position: 0 50%;
   }
 }
+
 
 .profile-nav a {
   color: #fff;
@@ -91,6 +99,7 @@ body {
 }
 
 .myButton {
+
   box-shadow: 3px 4px 0 0 #4e6096;
   background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
   background-color: #ee7752;
@@ -101,6 +110,7 @@ body {
   padding: 0.5em 1em;
   text-decoration: none;
   text-shadow: 0 1px 0 #0c4a3a;
+
 }
 
 .myButton:hover {
@@ -110,6 +120,7 @@ body {
 
 /*SELECT BOX FOR THEME DROPDOWN*/
 select {
+
   /* styling */
   box-shadow: 3px 4px 0 0 #4e6096;
   background-color: white;
@@ -126,6 +137,7 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+
 }
 
 /*Selectbox Arrow*/
@@ -175,6 +187,7 @@ div.page-main {
 }
 
 div.profile-main {
+
   width: 400px;
   background-color: white;
   border-radius: 10px;
@@ -189,6 +202,7 @@ div.profile-main {
 div.my-profile {
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
 }
 
 div.profile-main section.profile-photo {
@@ -201,6 +215,7 @@ div.profile-main section.profile-photo img {
 }
 
 div.profile-main section.profile-info {
+
   height: 100px;
 }
 
@@ -210,6 +225,7 @@ div.profile-main section.profile-info h1 {
   line-height: 25px;
   padding-top: 25px;
   padding-bottom: 10px;
+
 }
 
 div.profile-main section.profile-info h2 {
@@ -225,11 +241,13 @@ div.profile-main section.profile-info div {
 }
 
 div.profile-main section.profile-links {
+
   height: 100px;
   padding-top: 37.5px;
   padding-bottom: 12.5px;
   box-sizing: border-box;
   margin-top: 45px;
+
 }
 
 div.profile-main section.profile-links a {
@@ -253,6 +271,11 @@ div.profile-main section.profile-links a:hover svg path {
   fill: #414f57;
 }
 
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
+}
+
 @media only screen and (max-width: 444.44px) {
   div.main {
     width: 90%;
@@ -260,6 +283,7 @@ div.profile-main section.profile-links a:hover svg path {
 }
 
 @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+
   div.main {
     margin: 5vw 0;
     margin-bottom: 0;
@@ -269,3 +293,4 @@ div.profile-main section.profile-links a:hover svg path {
     position: relative;
   }
 }
+
