@@ -4,18 +4,19 @@
   margin: 0;
   padding: 0;
 }
-#dark_text{
-   color: white;
+
+#dark_text {
+  color: white;
 }
 
 /* Default Theme Styles */
 body {
 
-background-color: #000000;
-color: #414f57;
-background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background-color: #000000;
+  color: #414f57;
+  background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 
 }
 
@@ -25,24 +26,26 @@ background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
 }
 
 a {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
 }
-a:hover {
-    color: yellow;
-}
-.brg {
-    
 
-        color: rgb(236, 66, 55);
-        text-transform: uppercase;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-    
+a:hover {
+  color: yellow;
+}
+
+.brg {
+
+
+  color: rgb(236, 66, 55);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
 }
 
 
@@ -52,17 +55,17 @@ a:hover {
   border-radius: 10px;
   text-align: center;
   color: #414f57;
-  font-weight:300;
+  font-weight: 300;
   background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-    font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    display: block;
-    align-self: end;
-height:100vh
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  display: block;
+  align-self: end;
+  height: 100vh;
 }
 
 @keyframes gradient {
@@ -98,7 +101,8 @@ height:100vh
 }
 
 .theme-switch {
-  display: inline; /* Use "inline-block" for more control over spacing */
+  display: inline;
+  /* Use "inline-block" for more control over spacing */
 }
 
 .myButton {
@@ -169,9 +173,10 @@ footer div.profile-footer {
   position: absolute;
   bottom: 0;
 }
+
 div.page-main {
   width: 85%;
-  background-color:rgba(255, 255, 255, 0.058);
+  background-color: rgba(255, 255, 255, 0.058);
   border-radius: 10px;
   text-align: left;
   box-sizing: border-box;
