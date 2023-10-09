@@ -38,7 +38,7 @@ For total beginners, I will be listing ongoing issues and enhancement ideas that
 <div align="center">
 <a href="https://github.com/omicreativedev/hacktoberfest2023/graphs/contributors">
 <!-- <img src="https://contrib.rocks/image?repo=omicreativedev/hacktoberfest2023"> -->
- <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=400&spacing=3">
+ <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=400&spacing=1">
 </a>
 </div>
 
