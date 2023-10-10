@@ -35,12 +35,16 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+.profile-main {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9) !important;
+}
 
         .profile-nav {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 0 auto;
+            margin-bottom: 10px;
         }
 
         .myButton {
@@ -52,13 +56,14 @@
             border-radius: 5px;
         }
 
-        .myButton:hover {
+        .homeButton:hover {
             background-color: #0056b3;
         }
 
-        .theme-switch {
-            float: right;
-        }
+.profile-nav {
+text-align: center !important;
+  margin: 4px;
+}
 
         .profile-main {
             width: 700px;
@@ -74,9 +79,7 @@
             color: #333;
         }
 
-        .profile-links {
-            margin-top: 20px;
-        }
+  
 
         .profile-links a {
             margin: 0 10px;
@@ -89,7 +92,7 @@
 <body>
 <div class="profile-content">
     <div class="profile-nav">
-        <a href="../index.html" class="myButton">Home</a>
+        <a href="../index.html" class="homeButton">Home</a>
 
         <div class="theme-switch">
             <select id="theme-select" onchange="changeTheme()">
@@ -97,7 +100,7 @@
             </select>
         </div>
     </div>
-    <div class="profile-main">
+    <div class="profile-main whtbg" style="height: 500px; width: 400px;">
         <section class="profile-photo">
             <img src="https://avatars.githubusercontent.com/u/123138487?v=4" alt="Pranav Reddy">
         </section>

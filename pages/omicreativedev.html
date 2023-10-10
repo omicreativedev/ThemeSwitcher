@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="@omicreativedev">
-    <meta property="og:description" content="@omicreativedev Hacktoberfest Profile Card">
-    <meta name="description" content="@omicreativedev Hacktoberfest Profile Card">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="@omicreativedev" />
+    <meta property="og:description" content="@omicreativedev Hacktoberfest Profile Card" />
+    <meta name="description" content="@omicreativedev Hacktoberfest Profile Card" />
     <!-- This is the image that shows up on Social Media when you link to the page. -->
-    <meta property="og:image" content="https://omicreativedev.github.io/hacktoberfest2023/pages/img/omicreativedev/omicreative-social.jpg">
+    <meta property="og:image" content="https://omicreativedev.github.io/hacktoberfest2023/pages/img/omicreativedev/omicreative-social.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <link id="theme-style" rel="stylesheet" type="text/css" href="../themes/light.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="../themes/light.css" />
     <!-- Favicon is a small image that appears in the tab of some browsers. -->
-    <link rel="icon" href="img/omicreativedev/favicon.ico">
+    <link rel="icon" href="img/omicreativedev/favicon.ico" />
     <!-- CDN for Tabler icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <title>@omicreativedev</title>
+    <!-- Format your HTML with https://webformatter.com/html & use 2 tab indent! -->
+
     <style>
 
-        .profile-links .ti{
-            font-size: 45px;
-            color: #747373;
-            border-radius: 40%;
-            padding: 0.5rem;
-            transition: 0.1s;
-        }
+.profile-main {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9) !important;
+}
 
-        .profile-links a:hover .ti{
-            color: #292929;
-        }
+      .profile-links .ti {
+        font-size: 45px;
+        color: #747373;
+        border-radius: 40%;
+        padding: 0.5rem;
+        transition: 0.1s;
+      }
 
+      .profile-links a:hover .ti {
+        color: #292929;
+      }
     </style>
-    <title>@omicreativedev</title>
-</head>
-
-<body>
- <div class="profile-content">  
- <div class="profile-nav">
-
-<a href="../index.html" class="myButton">Home</a>  
-
-<!-- Theme Switching Dropdown -->
-<div class="theme-switch">
-    <select id="theme-select" onchange="changeTheme()">
-        <option value="">Default Theme</option>
-    </select>
-</div>
+  </head>
 
 
- </div>
-    <div class="profile-main">
+  <body>
+    <div class="profile-content">
+
+<!--START NAVIGATION BAR-->
+      <div class="profile-nav">
+        <a href="../index.html" class="homeButton">Home</a>
+ <!-- Theme Switching Dropdown -->
+        <div class="theme-switch">
+          <select id="theme-select" onchange="changeTheme()">
+            <option value="">Switch Theme</option>
+          </select>
+        </div>
+<!-- End Theme Switching Dropdown -->
+      </div>
+<!--END NAVIGATION BAR-->
+
+      <!-- Begin Profile Card (the white box) -->
+      <div class="profile-main grybg" style="height: 490px; width: 400px;">
         <section class="profile-photo">
-        
-        <!-- Use your github picture or upload an image to -> img/yourname/ folder-->
-            <img src="https://avatars.githubusercontent.com/u/82254764?v=4" alt="@omicreativedev">
+          <!-- Use your github picture or upload an image to -> img/yourname/ folder-->
+          <img src="https://avatars.githubusercontent.com/u/82254764?v=4" alt="@omicreativedev" />
         </section>
         <section class="profile-info">
-            <h1 class="name" style="color: black;">@omicreativedev</h1>
-            <h2 style="color: black;">Computer Science Student</h2>
+          <h1 class="name">@omicreativedev</h1>
+          <h2 class="title">Computer Science Student</h2>
         </section>
         <section class="profile-links">
-            <a href="https://twitter.com/omicreativedev" target="_blank">
-                <i class="ti ti-brand-x"></i>
-            </a>
-            <a href="https://github.com/omicreativedev" target="_blank">
-                <i class="ti ti-brand-github"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="ti ti-brand-linkedin"></i>
-            </a>
+          <a href="https://twitter.com/omicreativedev" target="_blank">
+            <i class="ti ti-brand-x"></i>
+          </a>
+          <a href="https://github.com/omicreativedev" target="_blank">
+            <i class="ti ti-brand-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sshunamon/" target="_blank">
+            <i class="ti ti-brand-linkedin"></i>
+          </a>
         </section>
+      </div>
+      <footer><div class="profile-footer"></div></footer>
     </div>
-    <footer><div class="profile-footer">
-   
-        </div>
-    </footer>
-    </div>
-    
-  <script>
 
-    // Function to populate the theme select dropdown
+    <script>
+// Javascript for themeswitcher_subdir.js
+
     async function populateThemeDropdown() {
       try {
         const themeSelect = document.getElementById("theme-select");
@@ -98,24 +102,21 @@
   }
 }
 
-
-    // Call the functions to populate the dropdowns
+// Call the functions to populate the themeswitcher_subdir.js dropdowns
     populateThemeDropdown();
 
-
-
-    // Function to handle theme selection change
+// Function to handle theme selection change for themeswitcher_subdir.js
     function changeTheme() {
         const selectedValue = document.getElementById("theme-select").value;
         if (selectedValue !== "") {
-            // Change the theme by updating the stylesheet
-            document.getElementById("theme-style").href = selectedValue;
-        }
-    }
 
-    // Attach the changePage and changeTheme functions to the select elements' onchange events
-  
-    document.getElementById("theme-select").addEventListener("change", changeTheme);
-</script>
-</body>
+// Change the theme by updating the stylesheet with themeswitcher_subdir.js
+          document.getElementById("theme-style").href = selectedValue;
+        }
+      }
+
+// Attach the changePage and changeTheme functions to the select elements' onchange events with themeswitcher_subdir.js
+      document.getElementById("theme-select").addEventListener("change", changeTheme);
+    </script>
+  </body>
 </html>
