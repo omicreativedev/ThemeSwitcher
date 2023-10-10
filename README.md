@@ -79,4 +79,6 @@ The following repsitories are teaching me a lot about open source, Git, maintain
 * [Git Into Open Source](https://github.com/Lissy93/git-into-open-source/tree/main) vy Lissy93
 * [Hacktoberfest2023](https://github.com/ossamamehmood/Hacktoberfest2023) by OssamaMehmood
 
-
+# DEPLOYMENT STATUS
+This may take awhile after a large update...
+[![pages-build-deployment](https://github.com/omicreativedev/hacktoberfest2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/omicreativedev/hacktoberfest2023/actions/workflows/pages/pages-build-deployment)
