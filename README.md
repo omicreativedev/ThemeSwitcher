@@ -1,7 +1,7 @@
 Due to something breaking— The code in this repository had a big update.
 Because so many forks are out of sync, some actions are failing.
 If you are working on a fork, please backup your work and resync.
-Since almost all open issues are in modules, you can you drop your themes/pages in.
+Since almost all open issues are in modules, you can you drop your themes/pages in the synced repo.
 
 # hacktoberfest2023 - ⭐ Goal 200 Stars!
 
