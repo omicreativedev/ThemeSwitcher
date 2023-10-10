@@ -1,0 +1,298 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Theme Styles */
+body {
+
+  background-color: #23a6d5;
+ 
+color: #414f57;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #b82f06, #8a0035, #4b869b, #058366);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+margin:0;
+padding:0
+
+}
+
+div .page-main h2 span #hack{
+    color: yellow;
+}
+
+.brg {
+
+
+    color: rgb(240, 222, 56);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.profile-nav {
+  text-align: left;
+  margin: 4px;
+}
+
+.profile-content {
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  /* font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #414f57;
+  /* background: linear-gradient(-45deg, #b61e58, #b31515, #971f4d, #971777); */
+  background: linear-gradient(-45deg, #ee199c,#eb1414,#ff1a5f,#ebb915);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-webkit-keyframes {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.profile-nav a {
+  color: #530404;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: rgb(167, 86, 86);
+}
+
+.theme-switch {
+  display: inline; /* Use "inline-block" for more control over spacing */
+}
+
+.myButton {
+  box-shadow: 3px 4px 0 0 #4e6096;
+  /* background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%); */
+  background: linear-gradient(45deg, #439797 , #32a0c2 , rgb(54, 178, 182),rgb(14, 179, 190));
+  background-color: #ee7752;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #0d8668;
+}
+
+.myButton:hover {
+  background: linear-gradient(-45deg,rgb(250, 203, 115), rgb(250, 250, 104));
+  background-color: #e73c7d;
+}
+
+/*SELECT BOX FOR THEME DROPDOWN*/
+select {
+  /* styling */
+  box-shadow: 3px 4px 0 0 #b9b60b;
+  background-color: rgb(253, 252, 188);
+  border-radius: 10px;
+  border: 1px solid #6a6b17;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.4em 3.5em 0.4em 1em;
+  /* reset */
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/*Selectbox Arrow*/
+select.classic {
+  background-image: linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+footer div.profile-footer {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 17.5px;
+  color: white;
+  line-height: 75px;
+  position: absolute;
+  bottom: 0;
+}
+div.page-main {
+
+  width: 85%;
+ /* background-color:rgba(255, 255, 255, 0.044); */
+ background-color:rgba(107, 180, 39, 0.774);
+  border-radius: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 75px 25px;
+  display: inline-block;
+  padding-top: 50px;
+padding-bottom: 50px;
+box-shadow: 0 10px 30px  rgb(151, 142, 58);
+
+
+  margin-top: calc(((100vh - 565px) / 2));
+}
+
+div.profile-main {
+
+  width: 400px;
+  /* background-color: rgb(241, 134, 134); */
+  background: linear-gradient(90deg, rgb(194, 186, 78) 8%, rgb(187, 170, 20) 99%,rgb(207, 191, 39) 20%);
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 75px 25px;
+  display: inline-block;
+  height: 490px;
+  margin-top: calc(((100vh - 565px) / 2));
+  box-shadow: 0 40px 60px  rgb(151, 142, 58);
+}
+
+
+div.my-profile {
+    background: linear-gradient(90deg, rgb(194, 186, 78) 8%, rgb(187, 170, 20) 99%,rgb(207, 191, 39) 20%);
+}
+
+div.profile-main section.profile-photo {
+  height: 125px;
+}
+
+div.profile-main section.profile-photo img {
+  height: 125px;
+  border-radius: 50%;
+}
+
+div.profile-main section.profile-info {
+  height: 100px;
+}
+
+div.profile-main section.profile-info h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: #8a0035;
+}
+
+div.profile-main section.profile-info h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #571931;
+}
+
+div.profile-main section.profile-info div {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #571931;
+}
+
+div.profile-main section.profile-links {
+  height: 100px;
+  padding-top: 37.5px;
+  padding-bottom: 12.5px;
+  box-sizing: border-box;
+  margin-top: 45px;
+  color: #571931;
+}
+
+div.profile-main section.profile-links a {
+  height: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+div.profile-main section.profile-links a svg {
+  height: 50px;
+  width: auto;
+}
+
+div.profile-main section.profile-links a svg path {
+  /* fill: #c8cccf; */
+  /* fill: #25c7ac; */
+  fill: #f5faf9;
+
+
+  transition: fill 0.25s ease;
+}
+
+div.profile-main section.profile-links a:hover svg path {
+ fill: #e24048; 
+  
+}
+
+@media only screen and (max-width: 444.44px) {
+  div.main {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+  div.main {
+    margin: 5vw 0;
+    margin-bottom: 0;
+  }
+
+  footer {
+    position: relative;
+    /* background: white; */
+  }
+}
+
+
+
