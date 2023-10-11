@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Pranav Reddy's Profile">
-    <meta property="og:description" content="Pranav Reddy">
-    <meta name="description" content="Pranav Reddy>
-    <meta property="og:image" content="https://omicreativedev.github.io/ThemeSwitcher/pages/img/omicreativedev/omicreative-social.jpg">
+    <meta property="og:description" content="Pranav Reddy's Hacktoberfest Profile Card">
+    <meta name="description" content="Pranav Reddy's Hacktoberfest Profile Card">
+    <meta property="og:image" content="https://omicreativedev.github.io/hacktoberfest2023/pages/img/omicreativedev/omicreative-social.jpg">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <link id="theme-style" rel="stylesheet" type="text/css" href="../themes/light.css">
@@ -35,16 +35,12 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-.profile-main {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9) !important;
-}
 
         .profile-nav {
             text-align: center;
-            margin: 0 auto;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .myButton {
@@ -56,14 +52,13 @@
             border-radius: 5px;
         }
 
-        .homeButton:hover {
+        .myButton:hover {
             background-color: #0056b3;
         }
 
-.profile-nav {
-text-align: center !important;
-  margin: 4px;
-}
+        .theme-switch {
+            float: right;
+        }
 
         .profile-main {
             width: 700px;
@@ -79,7 +74,9 @@ text-align: center !important;
             color: #333;
         }
 
-  
+        .profile-links {
+            margin-top: 20px;
+        }
 
         .profile-links a {
             margin: 0 10px;
@@ -92,7 +89,7 @@ text-align: center !important;
 <body>
 <div class="profile-content">
     <div class="profile-nav">
-        <a href="../index.html" class="homeButton">Home</a>
+        <a href="../index.html" class="myButton">Home</a>
 
         <div class="theme-switch">
             <select id="theme-select" onchange="changeTheme()">
@@ -100,7 +97,7 @@ text-align: center !important;
             </select>
         </div>
     </div>
-    <div class="profile-main whtbg" style="height: 500px; width: 400px;">
+    <div class="profile-main">
         <section class="profile-photo">
             <img src="https://avatars.githubusercontent.com/u/123138487?v=4" alt="Pranav Reddy">
         </section>

@@ -1,211 +1,59 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap";
 
-/*After working in this file, use https://codebeautify.org/css-beautify-minify to clean up with 2 indents. Remove double verticle spaces.*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/* Body applies to ALL pages (including index.html) */
+/* Default Theme Styles */
 body {
+
   color: #414f57;
-  background: linear-gradient(-45deg, #440760, #e73c7e, #9f4590, #000761);
+  background: linear-gradient(-45deg, #440760, #e73c7e, #9F4590, #000761);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0
+
 }
 
-a {
-  color: #23a6d5;
+.brg {
+
+
+  color: rgb(240, 154, 56);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
 }
 
-a:hover {
-  color: #9f4590;
+#dark_text {
+  color: aliceblue;
 }
 
-p {
-    line-height: 1;
-}
 
-h1 {
-    color: #23a6d5;
-    font-size: 3.625rem;
-    margin: 10px auto;
-}
-
-h1.small {
-    color: #9f4590;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 10px auto;
-}
-
-h1.name {
-    color: #444444;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 10px auto;
-}
-
-h1.index {
-    color: #000000;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 10px auto;
-}
-
-h2 {
-    color: #23a6d5;
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 10px auto;
-}
-
-h2.title {    
-    color: #444444;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 10px auto;
-    }
-    
-h2.index {
-    color: #444444;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10px auto;
-}
-
-h3 {
-color: #ee7752;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-h3.index {
-color: #444444;
-}
-
-h4{
-    color: #23a6d5;
-}
-
-h4.index {
-color: #444444;
-}
-
-ul, li {
-color:#444444;
-}
-
-/* Main class for index.html */
-div.page-main {
-  width: 85%;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 75px 25px;
-  display: inline-block;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-p.index-text, .theme-switch label, .page-selection label {
-  color: #444444;
-    line-height: 1.5;
-}
-
-/* Profile Pages Navigation */
-/*--------------------------*/
 .profile-nav {
   text-align: left;
   margin: 4px;
 }
 
-.profile-nav a {
-  color: #fff;
-}
-
-.homeButton {
-  box-shadow: 3px 4px 0 0 #4e6096;
-  background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
-  background-color: #ee7752;
-  border-radius: 10px;
-  border: 1px solid #4e6096;
-  display: inline-block;
-  cursor: pointer;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #0c4a3a;
-}
-
-.homeButton:hover {
-  background: linear-gradient(to bottom, #e73c7d 5%, #ee7752 100%);
-  background-color: #e73c7d;
-}
-
-.theme-switch {
-  display: inline;
-}
-
-/*SELECT BOX FOR THEME DROPDOWN*/
-select {
-  /* styling */
-  box-shadow: 3px 4px 0 0 #4e6096;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #4e6096;
-  display: inline-block;
-  font: inherit;
-  line-height: 1.5em;
-  padding: 0.4em 3.5em 0.4em 1em;
-  /* reset */
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-/*Selectbox Arrow*/
-select.classic {
-  background-image: linear-gradient(45deg, transparent 50%, blue 50%),
-    linear-gradient(135deg, blue 50%, transparent 50%),
-    linear-gradient(to right, skyblue, skyblue);
-  background-position: calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px), 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-  background-repeat: no-repeat;
-}
-
-select.classic:focus {
-  background-image: linear-gradient(45deg, white 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, white 50%),
-    linear-gradient(to right, gray, gray);
-  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-  background-repeat: no-repeat;
-  border-color: grey;
-  outline: 0;
-}
-
-/* Profile Body (main big box around card) */
-/*-----------------------------------------*/
 .profile-content {
+
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
   text-align: center;
   color: #414f57;
   background: linear-gradient(-45deg, #440760, #e73c7e, #9f4590, #000761);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  height: 100vh;
+
 }
 
 @keyframes gradient {
@@ -222,18 +70,93 @@ select.classic:focus {
   }
 }
 
+
 @-webkit-keyframes {
   0% {
     background-position: 0 50%;
   }
 
+
   50% {
     background-position: 100% 50%;
   }
 
+
+
   100% {
     background-position: 0 50%;
   }
+}
+
+
+.profile-nav a {
+  color: #fff;
+}
+
+.theme-switch {
+  display: inline;
+  /* Use "inline-block" for more control over spacing */
+}
+
+.myButton {
+
+  box-shadow: 3px 4px 0 0 #4e6096;
+  background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
+  background-color: #ee7752;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #0c4a3a;
+
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #e73c7d 5%, #ee7752 100%);
+  background-color: #e73c7d;
+}
+
+/*SELECT BOX FOR THEME DROPDOWN*/
+select {
+
+  /* styling */
+  box-shadow: 3px 4px 0 0 #4e6096;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.4em 3.5em 0.4em 1em;
+  /* reset */
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+/*Selectbox Arrow*/
+select.classic {
+  background-image: linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
 }
 
 footer div.profile-footer {
@@ -247,41 +170,41 @@ footer div.profile-footer {
   bottom: 0;
 }
 
-/* Section - Profile Main (Card Box) */
-/*-----------------------------------*/
+div.page-main {
+
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.057);
+  border-radius: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 75px 25px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+
+  margin-top: calc(((100vh - 565px) / 2));
+}
+
 div.profile-main {
+
+  width: 400px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
-  padding: 65px 25px;
+  padding: 75px 25px;
   display: inline-block;
-  margin-top: 25px;
+  height: 490px;
+  margin-top: calc(((100vh - 565px) / 2));
 }
 
-.whtbg {
- background: white;
-}
-
-.grybg {
- background: rgb(255, 255, 250);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(225, 225, 225, 1) 100%
-  );
-}
-
-div.hrithik0112-profile {
+div.my-profile {
   background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
 }
 
-/* Section - Profile Photo */
-/*-------------------------*/
 div.profile-main section.profile-photo {
   height: 125px;
 }
@@ -291,15 +214,9 @@ div.profile-main section.profile-photo img {
   border-radius: 50%;
 }
 
-/* Contributor Box on thankyou.html */
-.contrib-box {
-   border: solid white 0px;
-}
-
-/* Section - Profile Info */
-/*------------------------*/
 div.profile-main section.profile-info {
-  width: 100%;
+
+  height: 100px;
 }
 
 div.profile-main section.profile-info h1 {
@@ -308,6 +225,7 @@ div.profile-main section.profile-info h1 {
   line-height: 25px;
   padding-top: 25px;
   padding-bottom: 10px;
+
 }
 
 div.profile-main section.profile-info h2 {
@@ -322,13 +240,14 @@ div.profile-main section.profile-info div {
   line-height: 30px;
 }
 
-/* Section - Profile Links */
-/*-------------------------*/
 div.profile-main section.profile-links {
+
   height: 100px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 37.5px;
+  padding-bottom: 12.5px;
   box-sizing: border-box;
+  margin-top: 45px;
+
 }
 
 div.profile-main section.profile-links a {
@@ -344,16 +263,19 @@ div.profile-main section.profile-links a svg {
 }
 
 div.profile-main section.profile-links a svg path {
-  fill: #414f57;
+  fill: #c8cccf;
   transition: fill 0.25s ease;
 }
 
 div.profile-main section.profile-links a:hover svg path {
-  fill: #c8cccf;
+  fill: #414f57;
 }
 
-/* Responsive Screen Resizing */
-/*----------------------------*/
+div.profile-main section.profile-links a img{
+    height: 90px;
+    width: 90px;
+}
+
 @media only screen and (max-width: 444.44px) {
   div.main {
     width: 90%;
@@ -361,6 +283,7 @@ div.profile-main section.profile-links a:hover svg path {
 }
 
 @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+
   div.main {
     margin: 5vw 0;
     margin-bottom: 0;
@@ -370,3 +293,4 @@ div.profile-main section.profile-links a:hover svg path {
     position: relative;
   }
 }
+

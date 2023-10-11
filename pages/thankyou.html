@@ -7,16 +7,13 @@
     <meta property="og:description" content="Thank you for contributing to omicreativedev/Hacktoberfest2023">
     <meta name="description" content="Thank you for contributing to omicreativedev/Hacktoberfest2023">
     <!-- This is the image that shows up on Social Media when you link to the page. -->
-    <meta property="og:image" content="https://omicreativedev.github.io/ThemeSwitcher/pages/img/thankyou/thankyou-social.jpg">
+    <meta property="og:image" content="https://omicreativedev.github.io/hacktoberfest2023/pages/img/thankyou/thankyou-social.jpg">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <link id="theme-style" rel="stylesheet" type="text/css" href="../themes/light.css">
     <!-- Favicon is a small image that appears in the tab of some browsers. -->
     <link rel="icon" href="img/omicreativedev/favicon.ico">
     <title>You've Earned a Badge!</title>
-<!-- Format your HTML with https://webformatter.com/html & use 2 tab indent! -->
-
-<!--Stylesheet for Confetti-->
     <style>
       body {
         margin: 0;
@@ -77,37 +74,29 @@
       }
     </style>
   </head>
-
-
   <body>
     <div class="profile-content">
-
-<!--START NAVIGATION BAR-->
       <div class="profile-nav">
-        <a href="../index.html" class="homeButton">Home</a>
- <!-- Theme Switching Dropdown -->
+        <a href="../index.html" class="myButton">Home</a>
+        <!-- Theme Switching Dropdown -->
         <div class="theme-switch">
           <select id="theme-select" onchange="changeTheme()">
             <option value="">Switch Theme</option>
           </select>
         </div>
-<!-- End Theme Switching Dropdown -->
       </div>
-<!--END NAVIGATION BAR-->
-
-<!-- Begin Profile Card (the white box) -->
-      <div class="profile-main whtbg" style="height: 500px; width: 400px;">
+      <div class="profile-main">
         <div class="badge" onclick="burstConfetti()">
-          <img src="https://omicreativedev.github.io/ThemeSwitcher/pages/img/thankyou/contributor_badge.png" alt="Official Contributor Badge" height="231" width="196">
+          <img src="https://omicreativedev.github.io/hacktoberfest2023/pages/img/thankyou/contributor_badge.png" alt="Official Contributor Badge" height="231" width="196">
         </div>
         <section class="profile-info">
-          <h1 class="small">Contributor Recognition</h1>
+          <h2 class="name">Contributor Recognition </h1>
         </section>
         <section>
           <div align="center">
-            <a href="https://github.com/omicreativedev/ThemeSwitcher/graphs/contributors">
-              <!-- <img src="https://contrib.rocks/image?repo=omicreativedev/ThemeSwitcher"> -->
-              <img class="contrib-box" src="https://readme-contributors.now.sh/omicreativedev/ThemeSwitcher?width=180&spacing=2&avatarSize=17">
+            <a href="https://github.com/omicreativedev/hacktoberfest2023/graphs/contributors">
+              <!-- <img src="https://contrib.rocks/image?repo=omicreativedev/hacktoberfest2023"> -->
+              <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=180&spacing=2&avatarSize=20">
             </a>
           </div>
         </section>
@@ -116,10 +105,7 @@
         <div class="profile-footer"></div>
       </footer>
     </div>
-
     <script>
-
-// Javascript for Confetti 
       function createConfetti(x, y) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti';
@@ -138,13 +124,10 @@
           createConfetti(x, y);
         }
       }
-
-// Trigger confetti burst effect on page load
+      // Trigger confetti burst effect on page load
       window.onload = function() {
         burstConfetti();
       }
-
-// Javascript for themeswitcher_subdir.js
 
     async function populateThemeDropdown() {
       try {
@@ -165,20 +148,21 @@
   }
 }
 
-// Call the functions to populate the themeswitcher_subdir.js dropdowns
+
+    // Call the functions to populate the dropdowns
     populateThemeDropdown();
 
-// Function to handle theme selection change for themeswitcher_subdir.js
+
+
+    // Function to handle theme selection change
     function changeTheme() {
         const selectedValue = document.getElementById("theme-select").value;
         if (selectedValue !== "") {
-
-// Change the theme by updating the stylesheet with themeswitcher_subdir.js
+          // Change the theme by updating the stylesheet
           document.getElementById("theme-style").href = selectedValue;
         }
       }
-
-// Attach the changePage and changeTheme functions to the select elements' onchange events with themeswitcher_subdir.js
+      // Attach the changePage and changeTheme functions to the select elements' onchange events
       document.getElementById("theme-select").addEventListener("change", changeTheme);
     </script>
   </body>

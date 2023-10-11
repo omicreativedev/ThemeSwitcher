@@ -1,26 +1,11 @@
 # Code of Conduct
 
-This is a Code of Conduct for this repository. This is largely based on the [p5.js Code of Conduct](https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md) and applies to all interactions here on GitHub, Discord, X, etc.
-
-Be mindful of your language. Any of the following behavior is unacceptable:
-
-Offensive comments related to gender identity and expression, sexual orientation, race, ethnicity, language, neuro-type, size, ability, class, religion, culture, subculture, political opinion, age, skill level, occupation, or background
-Threats of violence
-Deliberate intimidation
-Sexually explicit or violent material
-Unwelcome sexual attention
-Stalking or following
-Or any other kinds of harassment
-Use your best judgement. If it will possibly make others uncomfortable, do not post it.
-
-Be respectful. Disagreement is not an opportunity to attack someone else's thoughts or opinions. Although views may differ, remember to approach every situation with patience and care.
-
-Be considerate. Think about how your contribution will affect others in the community.
-
-Be open minded. Embrace new people and new ideas. Our community is continually evolving and we welcome positive change.
-
-If you believe someone is violating the code of conduct, we ask that you report it by emailing omi@omicreative.dev. Please include your name and a description of the incident, and we will get back to you ASAP.
-
-Participants asked to stop any harassing behavior are expected to comply immediately. If a participant engages in harassing behavior, the Coding Train may take any action they deem appropriate, up to and including expulsion from all Coding Train spaces and identification of the participant as a harasser to other Coding Train members or the general public.
-
-Please also read: https://www.contributor-covenant.org/adopters/
+1) Spam PRs will be labeled as spam. Spam is defined as:
+    * Fixing small typos, grammatical errors, and in front end readable text.
+    * Code fixes without being assigned an issue (simply create the issue and offer to fix it first.)
+    * Contributions that don't fit into the scope of the project ie. adding python
+Note: You can open a DISCUSSION about the problem or idea and we can chat about it!
+2) Please update an issue you are assigned within 3 days. You can post a comment in the issue or start a discussion. Inactivity may result in you being unassigned if someone else is interested in working on an issue.
+3) Read CONTRIBUTING.md
+4) Read https://www.contributor-covenant.org/adopters/
+5) This code of conduct may change based on problems that may arise.
