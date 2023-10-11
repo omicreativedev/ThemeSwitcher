@@ -12,7 +12,7 @@ Thank you!
 <div align="center">
 <a href="https://github.com/omicreativedev/hacktoberfest2023/graphs/contributors">
 <!-- <img src="https://contrib.rocks/image?repo=omicreativedev/hacktoberfest2023"> -->
- <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=500&spacing=2">
+ <img src="https://readme-contributors.now.sh/omicreativedev/hacktoberfest2023?width=500&spacing=3">
 </a>
 </div>
 
