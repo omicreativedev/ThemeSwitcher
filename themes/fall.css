@@ -17,11 +17,11 @@ body {
 }
 
 a {
-  color: yellow;
+  color: #c63d2f;
 }
 
 a:hover {
-  color: white;
+  color: #ff9b50;
 }
 
 p {
@@ -94,6 +94,10 @@ h4{
 
 h4.index {
 color: #444444;
+}
+
+ul, li {
+color:#444444;
 }
 
 /* Main class for index.html */
