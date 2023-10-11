@@ -1,118 +1,135 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+/*After working in this file, use https://codebeautify.org/css-beautify-minify to clean up with 2 indents. Remove double verticle spaces.*/
 
-#dark_text {
-  color: white;
-}
-
-/* Default Theme Styles */
+/* Body applies to ALL pages (including index.html) */
 body {
-
   background-color: #000000;
   color: #414f57;
   background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-
-.profile-nav {
-  text-align: left;
-  margin: 4px;
-}
-
 
 a {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
-  text-decoration: none;
-
+  color: #222222;
 }
 
 a:hover {
   color: yellow;
 }
 
-.brg {
-
-
-  color: rgb(236, 66, 55);
-  text-transform: uppercase;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-
+p {
+    line-height: 1;
 }
 
+h1 {
+    color: #23a6d5;
+    font-size: 3.625rem;
+    margin: 10px auto;
+}
 
-.profile-content {
-  margin: 10px;
-  padding: 10px;
+h1.small {
+    color: #9f4590;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+h1.name {
+    color: #444444;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+h1.index {
+    color: #eeeeee;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+h2 {
+    color: #23a6d5;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 10px auto;
+}
+
+h2.title {    
+    color: #eeeeee;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+    
+h2.index {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+h3 {
+color: #ee7752;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+h3.index {
+color: #eeeeee;
+}
+
+h4{
+    color: #23a6d5;
+}
+
+h4.index {
+color: #eeeeee;
+}
+
+ul, li {
+color:#eeeeee;
+}
+
+/* Main class for index.html */
+div.page-main {
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  text-align: center;
-  color: #414f57;
-  font-weight: 300;
-  background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-    -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  display: block;
-  align-self: end;
-  height: 100vh;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 75px 25px;
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+p.index-text, .theme-switch label, .page-selection label {
+  color: white;
+    line-height: 1.5;
 }
 
-
-@-webkit-keyframes {
-  0% {
-    background-position: 0 50%;
-  }
-
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+/* Profile Pages Navigation */
+/*--------------------------*/
+.profile-nav {
+  text-align: left;
+  margin: 4px;
 }
-
 
 .profile-nav a {
   color: #fff;
 }
 
-.theme-switch {
-  display: inline;
-  /* Use "inline-block" for more control over spacing */
-}
-
-.myButton {
-
+.homeButton {
   box-shadow: 3px 4px 0 0 #4e6096;
   background: linear-gradient(to bottom, #ee7752 5%, #e73c7d 100%);
   background-color: #ee7752;
@@ -125,15 +142,18 @@ a:hover {
   text-shadow: 0 1px 0 #0c4a3a;
 }
 
-.myButton:hover {
+.homeButton:hover {
   background: linear-gradient(to bottom, #e73c7d 5%, #ee7752 100%);
   background-color: #e73c7d;
 }
 
+.theme-switch {
+  display: inline;
+}
+
 /*SELECT BOX FOR THEME DROPDOWN*/
+
 select {
-
-
   /* styling */
   box-shadow: 3px 4px 0 0 #4e6096;
   background-color: white;
@@ -150,26 +170,77 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-
 }
 
 /*Selectbox Arrow*/
 select.classic {
   background-image: linear-gradient(45deg, transparent 50%, blue 50%),
-    linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
   background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
   background-repeat: no-repeat;
 }
 
 select.classic:focus {
   background-image: linear-gradient(45deg, white 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
   background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
   background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
   background-repeat: no-repeat;
   border-color: grey;
   outline: 0;
+}
+
+/* Profile Body (main big box around card) */
+/*-----------------------------------------*/
+.profile-content {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #414f57;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #222222, #555555, #111111, #666666);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: "Source Sans Pro", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  display: block;
+  align-self: end;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-webkit-keyframes {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 footer div.profile-footer {
@@ -183,48 +254,59 @@ footer div.profile-footer {
   bottom: 0;
 }
 
-div.page-main {
-  width: 85%;
-  background-color: rgba(255, 255, 255, 0.058);
-  border-radius: 10px;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 75px 25px;
-  display: inline-block;
-  margin-top: calc(((100vh - 565px) / 2));
-}
-
+/* Section - Profile Main (Card Box) */
+/*-----------------------------------*/
 div.profile-main {
-
-  width: 400px;
-  background-color: white;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
-  padding: 75px 25px;
+  padding: 65px 25px;
   display: inline-block;
-  height: 490px;
-  margin-top: calc(((100vh - 565px) / 2));
+  margin-top: 25px;
 }
 
-div.my-profile {
+.whtbg {
+ background: white;
+}
+
+.grybg {
+ background: rgb(255, 255, 250);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(225, 225, 225, 1) 100%
+  );
+}
+
+div.hrithik0112-profile {
   background: rgb(245, 245, 245);
-  background: radial-gradient(circle, rgba(245, 245, 245, 1) 8%, rgba(22, 29, 29, 1) 100%);
-
+  background: radial-gradient(
+    circle,
+    rgba(245, 245, 245, 1) 8%,
+    rgba(22, 29, 29, 1) 100%
+  );
 }
 
+/* Section - Profile Photo */
+/*-------------------------*/
 div.profile-main section.profile-photo {
   height: 125px;
 }
 
 div.profile-main section.profile-photo img {
   height: 125px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
-div.profile-main section.profile-info {
+/* Contributor Box on thankyou.html */
+.contrib-box {
+   border: solid white 0px;
+}
 
-  height: 100px;
+/* Section - Profile Info */
+/*------------------------*/
+div.profile-main section.profile-info {
+  width: 100%;
 }
 
 div.profile-main section.profile-info h1 {
@@ -233,7 +315,6 @@ div.profile-main section.profile-info h1 {
   line-height: 25px;
   padding-top: 25px;
   padding-bottom: 10px;
-
 }
 
 div.profile-main section.profile-info h2 {
@@ -248,14 +329,13 @@ div.profile-main section.profile-info div {
   line-height: 30px;
 }
 
+/* Section - Profile Links */
+/*-------------------------*/
 div.profile-main section.profile-links {
-
   height: 100px;
-  padding-top: 37.5px;
-  padding-bottom: 12.5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   box-sizing: border-box;
-  margin-top: 45px;
-
 }
 
 div.profile-main section.profile-links a {
@@ -271,20 +351,16 @@ div.profile-main section.profile-links a svg {
 }
 
 div.profile-main section.profile-links a svg path {
-  fill: #c8cccf;
+  fill: #414f57;
   transition: fill 0.25s ease;
 }
 
 div.profile-main section.profile-links a:hover svg path {
-  fill: #414f57;
+  fill: #c8cccf;
 }
 
-
-div.profile-main section.profile-links a img{
-    height: 90px;
-    width: 90px;
-}
-
+/* Responsive Screen Resizing */
+/*----------------------------*/
 @media only screen and (max-width: 444.44px) {
   div.main {
     width: 90%;
@@ -292,7 +368,6 @@ div.profile-main section.profile-links a img{
 }
 
 @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
-
   div.main {
     margin: 5vw 0;
     margin-bottom: 0;
@@ -302,4 +377,3 @@ div.profile-main section.profile-links a img{
     position: relative;
   }
 }
-
