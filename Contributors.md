@@ -2,11 +2,12 @@ You should update this file with your pull request so it's updated when your PR 
 
 Feel free to make a pull request to make this a beutiful page layout!
 
-username: your GitHub username linked to your page ```[YOURUSERNAME](yourlinkhere)```
-twitter: optional* ```[YOURUSERNAME](yourlinkhere)```
+username: your GitHub username linked to your page `[YOURUSERNAME](yourlinkhere)`
+twitter: optional\* `[YOURUSERNAME](yourlinkhere)`
 contribition: In a few words, describe your contribution. You may link to your PR, Merge, etc.
 
------------------------------------------------------------------------------------
+---
+
 Thank you!
 
 <div align="center">
@@ -16,23 +17,26 @@ Thank you!
 </a>
 </div>
 
-
-
 [Starkuser24](https://github.com/Starkuser24)
-* Created Pull Request Template
+
+- Created Pull Request Template
 
 [medinamohamed](https://github.com/medinamohamed)
-* Added Fall.css Theme
+
+- Added Fall.css Theme
 
 [hemanth110702](https://github.com/hemanth110702)
-* Fixed Bug: Removed blank spaces from dropdown
+
+- Fixed Bug: Removed blank spaces from dropdown
 
 [jfmartinz](https://github.com/jfmartinz)
-* Added Issue Template
+
+- Added Issue Template
 
   [dxeon](https://github.com/dxeon)
-* Refactor populateThemeDropdown() function
 
+- Refactor populateThemeDropdown() function
 
 [debuuuu007](https://github.com/debuuuu007)
-* added a theme tritan and also refactor a little part of css code
+
+- added a theme tritan and also refactor a little part of css code
