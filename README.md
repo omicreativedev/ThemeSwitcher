@@ -14,8 +14,8 @@ This project is a free website template (CC0-OpenSource) with theme switcher and
 For Hacktoberfest, I will be listing ongoing issues and enhancement ideas for friends, family, fellow students and other first timers to participate in and get a feel for Opensource, using Git, and basic scripting. I'll also list some issues that are no-code, low-code, documentation, and ux/gfx. Here you have a safe place you can learn and make mistakes and it's okay! If you have an idea or suggestion, feel free to raise an issue or start a  [Discussions](https://github.com/omicreativedev/hacktoberfest2023/discussions). This site is very basic, and I made it after taking lessons on freeCodeCamp. 💖💖💖 Anyone can do it!
 
 Demo
-Live: https://omicreative.dev/Themer
-Development: https://omicreativedev.github.io/ThemeSwitcher/
+- Live: https://omicreative.dev/Themer
+- Development: https://omicreativedev.github.io/ThemeSwitcher/
 
 ## Stack
 <div align="center">
