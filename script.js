@@ -1,4 +1,5 @@
-   // Function to populate the page select dropdown
+
+    // Function to populate the page select dropdown
     function populatePageDropdown() {
         const pageSelect = document.getElementById("page-select");
         fetch("pages_list.txt")
