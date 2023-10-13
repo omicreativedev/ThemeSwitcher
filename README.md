@@ -54,6 +54,5 @@ For Hacktoberfest, I will be listing ongoing issues and enhancement ideas that y
 CC0
 
 ## Share
-![BANNER](https://repository-images.githubusercontent.com/701103132/df77a062-b115-4b01-8c8e-a5d7d9ebd6c7)
 
 [...](https://twitter.com/intent/tweet?text=https%3A%2F%2Fomicreativedev.github.io%2Fhacktoberfest2023%2Fpages%2Fthankyou.html%0A%F0%9F%8E%88%F0%9F%A5%B3%20I%20just%20merged%20an%20%23opensource%20PR%20for%20%23Hacktoberfest%20)
